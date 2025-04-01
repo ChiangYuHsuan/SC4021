@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Table with Search and Dropdown</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Query Front-End</h2>
+
+<!-- Form to select a query and search -->
+<form method="POST">
+    <!-- Search Box -->
+    <input type="text" name="search" placeholder="Enter search term">
+    <br><br>
+
+    <!-- Dropdown to select query -->
+    <select name="query">
+        <option value="Query 1">Select All Based On Comment_Author</option>
+        <option value="Query 2">Query 2</option>
+        <option value="Query 3">Query 3</option>
+        <option value="Query 4">Query 4</option>
+        <option value="Query 5">Query 5</option>
+    </select>
+    <br><br>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Submit">
+</form>
+
+<!-- Table to display results -->
+<table>
+    <thead>
+        <tr>
+            {% for header in data[0] %}
+                <th>{{ header }}</th>
+            {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in data[1:] %}
+            <tr>
+                {% for cell in row %}
+                    <td>{{ cell }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+</body>
+</html>
