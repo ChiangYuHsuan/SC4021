@@ -1,0 +1,110 @@
+2025-04-11 17:48:38.341 INFO  (main) [   ] o.e.j.u.log Logging initialized @493ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-04-11 17:48:38.478 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.53.v20231009; built: 2023-10-09T12:29:09.265Z; git: 27bde00a0b95a1d5bbee0eae7984f891d2d0f8c9; jvm 21+35-2513
+2025-04-11 17:48:38.484 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/contexts/] at interval 0
+2025-04-11 17:48:38.669 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2025-04-11 17:48:38.674 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2025-04-11 17:48:38.674 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2025-04-11 17:48:38.675 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2025-04-11 17:48:38.702 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2025-04-11 17:48:38.704 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.11.4
+2025-04-11 17:48:38.704 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2025-04-11 17:48:38.704 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/malcs/Downloads/SC4021-main/solr-8.11.4
+2025-04-11 17:48:38.704 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2025-04-11T17:48:38.704813Z
+2025-04-11 17:48:38.711 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/solr
+2025-04-11 17:48:38.711 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/solr/solr.xml
+2025-04-11 17:48:38.749 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@35dab4eb, but no JMX reporters were configured - adding default JMX reporter.
+2025-04-11 17:48:39.027 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2025-04-11 17:48:39.109 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@1702830d[provider=null,keyStore=null,trustStore=null]
+2025-04-11 17:48:39.109 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@1702830d[provider=null,keyStore=null,trustStore=null]
+2025-04-11 17:48:39.171 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@77a074b4[provider=null,keyStore=null,trustStore=null]
+2025-04-11 17:48:39.171 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@77a074b4[provider=null,keyStore=null,trustStore=null]
+2025-04-11 17:48:39.187 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2025-04-11 17:48:39.247 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2025-04-11 17:48:39.251 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2025-04-11 17:48:39.276 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@35dab4eb
+2025-04-11 17:48:39.277 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@35dab4eb
+2025-04-11 17:48:39.277 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@35dab4eb
+2025-04-11 17:48:39.295 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/solr
+2025-04-11 17:48:39.295 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [testingcore]
+2025-04-11 17:48:39.308 INFO  (coreLoadExecutor-13-thread-1) [   x:testingcore] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.4
+2025-04-11 17:48:39.320 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@6c345c5f{/solr,file:///Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/solr-webapp/webapp/,AVAILABLE}{/Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/solr-webapp/webapp}
+2025-04-11 17:48:39.322 WARN  (coreLoadExecutor-13-thread-1) [   x:testingcore] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2025-04-11 17:48:39.325 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@29df4d43{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2025-04-11 17:48:39.325 INFO  (main) [   ] o.e.j.s.Server Started @1478ms
+2025-04-11 17:48:39.342 INFO  (coreLoadExecutor-13-thread-1) [   x:testingcore] o.a.s.s.IndexSchema Schema name=default-config
+2025-04-11 17:48:39.464 WARN  (coreLoadExecutor-13-thread-1) [   x:testingcore] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2025-04-11 17:48:39.464 WARN  (coreLoadExecutor-13-thread-1) [   x:testingcore] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2025-04-11 17:48:39.464 WARN  (coreLoadExecutor-13-thread-1) [   x:testingcore] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2025-04-11 17:48:39.464 WARN  (coreLoadExecutor-13-thread-1) [   x:testingcore] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2025-04-11 17:48:39.464 WARN  (coreLoadExecutor-13-thread-1) [   x:testingcore] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2025-04-11 17:48:39.532 INFO  (coreLoadExecutor-13-thread-1) [   x:testingcore] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2025-04-11 17:48:39.547 INFO  (coreLoadExecutor-13-thread-1) [   x:testingcore] o.a.s.c.CoreContainer Creating SolrCore 'testingcore' using configuration from instancedir /Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/solr/testingcore, trusted=true
+2025-04-11 17:48:39.560 INFO  (coreLoadExecutor-13-thread-1) [   x:testingcore] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.testingcore' (registry 'solr.core.testingcore') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@35dab4eb
+2025-04-11 17:48:39.566 INFO  (coreLoadExecutor-13-thread-1) [   x:testingcore] o.a.s.c.SolrCore [[testingcore] ] Opening new SolrCore at [/Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/solr/testingcore], dataDir=[/Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/solr/testingcore/data/]
+2025-04-11 17:48:39.783 INFO  (coreLoadExecutor-13-thread-1) [   x:testingcore] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2025-04-11 17:48:39.783 INFO  (coreLoadExecutor-13-thread-1) [   x:testingcore] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2025-04-11 17:48:39.792 INFO  (coreLoadExecutor-13-thread-1) [   x:testingcore] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2025-04-11 17:48:39.793 INFO  (coreLoadExecutor-13-thread-1) [   x:testingcore] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2025-04-11 17:48:39.874 INFO  (coreLoadExecutor-13-thread-1) [   x:testingcore] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/solr/testingcore/conf
+2025-04-11 17:48:39.879 INFO  (coreLoadExecutor-13-thread-1) [   x:testingcore] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2025-04-11 17:48:39.882 INFO  (coreLoadExecutor-13-thread-1) [   x:testingcore] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=comment_content,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=2}
+2025-04-11 17:48:39.887 INFO  (coreLoadExecutor-13-thread-1) [   x:testingcore] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2025-04-11 17:48:39.897 INFO  (searcherExecutor-15-thread-1-processing-x:testingcore) [   x:testingcore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2025-04-11 17:48:39.897 INFO  (searcherExecutor-15-thread-1-processing-x:testingcore) [   x:testingcore] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2025-04-11 17:48:39.899 INFO  (searcherExecutor-15-thread-1-processing-x:testingcore) [   x:testingcore] o.a.s.c.SolrCore [testingcore]  Registered new searcher autowarm time: 0 ms
+2025-04-11 17:48:49.576 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744393729441&indexInfo=false&wt=json)
+2025-04-11 17:48:49.576 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744393729441&wt=json)
+2025-04-11 17:48:49.576 INFO  (qtp1186339926-56) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/testingcore/select?_=1744393729476&defType=edismax&df=comment_content&indent=true&q=wate&q.op=AND)
+2025-04-11 17:48:49.588 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744393729441} status=0 QTime=13
+2025-04-11 17:48:49.592 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744393729441} status=0 QTime=16
+2025-04-11 17:48:49.657 INFO  (qtp1186339926-56) [   x:testingcore] o.a.s.c.S.Request [testingcore]  webapp=/solr path=/select params={q=wate&defType=edismax&df=comment_content&indent=true&q.op=AND&_=1744393729476} hits=0 status=0 QTime=82
+2025-04-11 17:48:50.340 INFO  (qtp1186339926-34) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/?null)
+2025-04-11 17:48:50.521 INFO  (qtp1186339926-33) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744393730497&wt=json)
+2025-04-11 17:48:50.521 INFO  (qtp1186339926-39) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744393730497&indexInfo=false&wt=json)
+2025-04-11 17:48:50.522 INFO  (qtp1186339926-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744393730497} status=0 QTime=0
+2025-04-11 17:48:50.525 INFO  (qtp1186339926-33) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744393730497} status=0 QTime=3
+2025-04-11 17:48:50.526 INFO  (qtp1186339926-56) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/testingcore/select?_=1744393730514&defType=edismax&df=comment_content&indent=true&q=wate&q.op=AND)
+2025-04-11 17:48:50.537 INFO  (qtp1186339926-56) [   x:testingcore] o.a.s.c.S.Request [testingcore]  webapp=/solr path=/select params={q=wate&defType=edismax&df=comment_content&indent=true&q.op=AND&_=1744393730514} hits=0 status=0 QTime=11
+2025-04-11 17:48:51.178 INFO  (qtp1186339926-32) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/?null)
+2025-04-11 17:48:51.343 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744393731323&wt=json)
+2025-04-11 17:48:51.343 INFO  (qtp1186339926-39) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744393731322&indexInfo=false&wt=json)
+2025-04-11 17:48:51.348 INFO  (qtp1186339926-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744393731322} status=0 QTime=5
+2025-04-11 17:48:51.348 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744393731323} status=0 QTime=5
+2025-04-11 17:48:51.348 INFO  (qtp1186339926-56) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/testingcore/select?_=1744393731335&defType=edismax&df=comment_content&indent=true&q=wate&q.op=AND)
+2025-04-11 17:48:51.359 INFO  (qtp1186339926-56) [   x:testingcore] o.a.s.c.S.Request [testingcore]  webapp=/solr path=/select params={q=wate&defType=edismax&df=comment_content&indent=true&q.op=AND&_=1744393731335} hits=0 status=0 QTime=10
+2025-04-11 17:48:51.466 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/?null)
+2025-04-11 17:48:51.564 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744393731542&indexInfo=false&wt=json)
+2025-04-11 17:48:51.564 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744393731542&wt=json)
+2025-04-11 17:48:51.565 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744393731542} status=0 QTime=1
+2025-04-11 17:48:51.567 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/testingcore/select?_=1744393731555&defType=edismax&df=comment_content&indent=true&q=wate&q.op=AND)
+2025-04-11 17:48:51.567 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744393731542} status=0 QTime=3
+2025-04-11 17:48:51.574 INFO  (qtp1186339926-36) [   x:testingcore] o.a.s.c.S.Request [testingcore]  webapp=/solr path=/select params={q=wate&defType=edismax&df=comment_content&indent=true&q.op=AND&_=1744393731555} hits=0 status=0 QTime=7
+2025-04-11 17:48:51.810 INFO  (qtp1186339926-33) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/?null)
+2025-04-11 17:48:51.910 INFO  (qtp1186339926-39) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744393731889&wt=json)
+2025-04-11 17:48:51.910 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744393731889&indexInfo=false&wt=json)
+2025-04-11 17:48:51.911 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744393731889} status=0 QTime=1
+2025-04-11 17:48:51.913 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/testingcore/select?_=1744393731903&defType=edismax&df=comment_content&indent=true&q=wate&q.op=AND)
+2025-04-11 17:48:51.914 INFO  (qtp1186339926-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744393731889} status=0 QTime=4
+2025-04-11 17:48:51.921 INFO  (qtp1186339926-37) [   x:testingcore] o.a.s.c.S.Request [testingcore]  webapp=/solr path=/select params={q=wate&defType=edismax&df=comment_content&indent=true&q.op=AND&_=1744393731903} hits=0 status=0 QTime=7
+2025-04-11 17:48:56.874 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/testingcore/select?_=1744393731903&defType=edismax&df=comment_content&indent=true&q=water&q.op=AND)
+2025-04-11 17:48:56.880 INFO  (qtp1186339926-40) [   x:testingcore] o.a.s.c.S.Request [testingcore]  webapp=/solr path=/select params={q=water&defType=edismax&df=comment_content&indent=true&q.op=AND&_=1744393731903} hits=100 status=0 QTime=8
+2025-04-11 17:48:56.954 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744393731889&indexInfo=false&wt=json)
+2025-04-11 17:48:56.954 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744393731889&wt=json)
+2025-04-11 17:48:56.955 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744393731889} status=0 QTime=0
+2025-04-11 17:48:56.955 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/testingcore/select?_=1744393731903&defType=edismax&df=comment_content&indent=true&q=water&q.op=AND)
+2025-04-11 17:48:56.957 INFO  (qtp1186339926-36) [   x:testingcore] o.a.s.c.S.Request [testingcore]  webapp=/solr path=/select params={q=water&defType=edismax&df=comment_content&indent=true&q.op=AND&_=1744393731903} hits=100 status=0 QTime=1
+2025-04-11 17:48:56.958 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744393731889} status=0 QTime=4
+2025-04-11 17:49:03.763 INFO  (qtp1186339926-33) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/testingcore/select?_=1744393731903&defType=edismax&df=comment_content&indent=true&q=water+salt&q.op=AND)
+2025-04-11 17:49:03.773 INFO  (qtp1186339926-33) [   x:testingcore] o.a.s.c.S.Request [testingcore]  webapp=/solr path=/select params={q=water+salt&defType=edismax&df=comment_content&indent=true&q.op=AND&_=1744393731903} hits=20 status=0 QTime=10
+2025-04-11 17:49:03.846 INFO  (qtp1186339926-39) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744393731889&wt=json)
+2025-04-11 17:49:03.846 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/testingcore/select?_=1744393731903&defType=edismax&df=comment_content&indent=true&q=water+salt&q.op=AND)
+2025-04-11 17:49:03.846 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744393731889&indexInfo=false&wt=json)
+2025-04-11 17:49:03.847 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744393731889} status=0 QTime=1
+2025-04-11 17:49:03.847 INFO  (qtp1186339926-40) [   x:testingcore] o.a.s.c.S.Request [testingcore]  webapp=/solr path=/select params={q=water+salt&defType=edismax&df=comment_content&indent=true&q.op=AND&_=1744393731903} hits=20 status=0 QTime=0
+2025-04-11 17:49:03.849 INFO  (qtp1186339926-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744393731889} status=0 QTime=4
+2025-04-11 17:49:07.796 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744393747756&wt=json)
+2025-04-11 17:49:07.797 INFO  (qtp1186339926-33) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/testingcore/select?_=1744393747788&defType=edismax&df=comment_content&indent=true&q=water+salt&q.op=AND)
+2025-04-11 17:49:07.800 INFO  (qtp1186339926-33) [   x:testingcore] o.a.s.c.S.Request [testingcore]  webapp=/solr path=/select params={q=water+salt&defType=edismax&df=comment_content&indent=true&q.op=AND&_=1744393747788} hits=20 status=0 QTime=2
+2025-04-11 17:49:07.800 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744393747756&indexInfo=false&wt=json)
+2025-04-11 17:49:07.801 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744393747756} status=0 QTime=4
+2025-04-11 17:49:07.801 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744393747756} status=0 QTime=0

@@ -39,6 +39,23 @@
     </select>
     <br><br>
 
+    <!-- Start Date -->
+    <label for="start_date">Start Date:</label>
+    <input type="date" id="start_date" name="start_date" value="{{ request.form.get('start_date', '') }}">
+    <br><br>
+
+    <!-- End Date -->
+    <label for="end_date">End Date:</label>
+    <input type="date" id="end_date" name="end_date" value="{{ request.form.get('end_date', '') }}">
+    <br><br>
+
+    <!-- Sentiment Category Filters (Checkboxes) -->
+    <label>Filter by Sentiment Category:</label><br>
+    <input type="checkbox" name="sentiment_category" value="Positive" {% if 'Positive' in request.form.getlist('sentiment_category') %}checked{% endif %}> Positive<br>
+    <input type="checkbox" name="sentiment_category" value="Neutral" {% if 'Neutral' in request.form.getlist('sentiment_category') %}checked{% endif %}> Neutral<br>
+    <input type="checkbox" name="sentiment_category" value="Negative" {% if 'Negative' in request.form.getlist('sentiment_category') %}checked{% endif %}> Negative<br>
+    <br>
+
     <!-- Submit Button -->
     <input type="submit" value="Submit">
 </form>
