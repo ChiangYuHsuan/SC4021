@@ -9,7 +9,7 @@ conn = sqlite3.connect('reddit_data.db')
 cursor = conn.cursor()
 
 # Open the CSV file and read its contents
-with open(csv_file, 'r', encoding='utf-8') as f:
+with open(csv_file, 'r', encoding='utf-8-sig', newline='') as f:
     reader = csv.reader(f)
     headers = next(reader)  # Skip the header row
 
