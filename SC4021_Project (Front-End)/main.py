@@ -10,15 +10,15 @@ data = []
 def retrieve(data, map, start_date, end_date):
     count = 0
     sentiment = 0
-    top_score = 0
+    top_score = -1
     top_comment = "No Comments Found"
 
     for i in map:
         if i[1] >= start_date and i[1] <= end_date:
             count += 1
             sentiment += int(data[i[0]][3])
-            if int(data[i[0]][3]) > top_score:
-                top_score = int(data[i[0]][3])
+            if int(data[i[0]][0]) > top_score:
+                top_score = int(data[i[0]][0])
                 top_comment = data[i[0]][2]
 
     return [count, top_comment, top_score, sentiment]
