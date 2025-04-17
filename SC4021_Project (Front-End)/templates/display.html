@@ -29,14 +29,14 @@
     <input type="text" name="search" placeholder="Enter search term">
     <br><br>
 
-    <!-- Dropdown to select query -->
-    <select name="query">
-        <option value="Query 1">Select All Based On Comment_Author</option>
-        <option value="Query 2">Query 2</option>
-        <option value="Query 3">Query 3</option>
-        <option value="Query 4">Query 4</option>
-        <option value="Query 5">Query 5</option>
-    </select>
+    <!-- Start Date -->
+    <label for="start_date">Start Date:</label>
+    <input type="date" id="start_date" name="start_date" value="{{ request.form.get('start_date', '') }}">
+    <br><br>
+
+    <!-- End Date -->
+    <label for="end_date">End Date:</label>
+    <input type="date" id="end_date" name="end_date" value="{{ request.form.get('end_date', '') }}">
     <br><br>
 
     <!-- Submit Button -->
