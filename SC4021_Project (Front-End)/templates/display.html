@@ -26,7 +26,7 @@
 <!-- Form to select a query and search -->
 <form method="POST">
     <!-- Search Box -->
-    <input type="text" name="search" placeholder="Enter search term">
+    <input type="text" name="search" placeholder="Enter search term" value="{{ request.form.get('search', '') }}">
     <br><br>
 
     <!-- Start Date -->
@@ -42,6 +42,8 @@
     <!-- Submit Button -->
     <input type="submit" value="Submit">
 </form>
+
+<p>Query completed in {{ elapsed_time }}ms.</p>
 
 <!-- Table to display results -->
 <table>
