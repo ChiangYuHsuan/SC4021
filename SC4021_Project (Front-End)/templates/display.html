@@ -25,45 +25,18 @@
 
 <!-- Form to select a query and search -->
 <form method="POST">
-
-    <!-- Dropdown to select query -->
-    <select name="query" id="querySelect">
-        <option value="Query 1">Tesla</option>
-        <option value="Query 2">Battery</option>
-        <option value="Query 3">Elon Musk</option>
-        <option value="Query 4">Charging</option>
-        <option value="Query 5">Trump</option>
-    </select>
-
-    <script>
-        // On page load, retrieve the selected option from localStorage
-        window.onload = function() {
-            var selectElement = document.getElementById('querySelect');
-            
-            // Get saved value from localStorage and set it
-            var savedValue = localStorage.getItem('querySelectValue');
-            if (savedValue) {
-                selectElement.value = savedValue;
-            }
-        }
-        
-        // Save the selected value when it changes
-        document.getElementById('querySelect').addEventListener('change', function() {
-            var selectedValue = this.value;
-            localStorage.setItem('querySelectValue', selectedValue);
-        });
-    </script>
-
+    <!-- Search Box -->
+    <input type="text" name="search" placeholder="Enter search term">
     <br><br>
 
     <!-- Start Date -->
     <label for="start_date">Start Date:</label>
-    <input type="date" id="start_date" name="start_date" min="2023-01-08" max="2024-12-31" value="{{ request.form.get('start_date', '') }}">
+    <input type="date" id="start_date" name="start_date" value="{{ request.form.get('start_date', '') }}">
     <br><br>
 
     <!-- End Date -->
     <label for="end_date">End Date:</label>
-    <input type="date" id="end_date" name="end_date" min="2023-01-08" max="2024-12-31" value="{{ request.form.get('end_date', '') }}">
+    <input type="date" id="end_date" name="end_date" value="{{ request.form.get('end_date', '') }}">
     <br><br>
 
     <!-- Submit Button -->
