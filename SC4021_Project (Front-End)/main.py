@@ -3,6 +3,7 @@ import sqlite3
 import requests
 import time
 from datetime import datetime
+import re
 
 app = Flask(__name__)
 
@@ -10,17 +11,24 @@ app = Flask(__name__)
 data = []
 SOLR_URL = 'http://localhost:8983/solr/reddit/select'
 
+def clean_query(query):
+    if query is None:
+        return
+    return re.sub(r'[^\w\s]', '', query)
+
 # Query Logic, Display All Based On Comment_Author
 def query(search_term=None, start_date=None, end_date=None):
-
+    clean_search_term = clean_query(search_term)
+    print(clean_search_term)
     # Default Parameters
     params = {
-        'q': f'{search_term}' if search_term else "*:*", #Term to search
+        'q': f'{clean_search_term}' if clean_search_term else "*:*", #Term to search
         'q.op' : "AND",
+        'sort' : "comment_score desc",
         'fl': 'comment_score, comment_date, comment_content, sentiment_score',  # Fields to return
         'df': 'comment_content', # Field to search from
         'wt': 'json',  # Specify format of response (JSON)
-        'rows': 100000,  # Limit to 1000 results, adjust as needed 
+        'rows': 10000000,  # Limit to 1000 results, adjust as needed 
         'defType': 'edismax',
     }
 
@@ -44,6 +52,8 @@ def query(search_term=None, start_date=None, end_date=None):
         elapsed_time_ms = (end_time - start_time) * 1000
         elapsed_time_ms = round(elapsed_time_ms, 2)
 
+        num_found = response.json()['response']['numFound']
+
         # Check for number of results received, if 0 then provide suggestions
         if response.json()['response']['numFound']==0:
             collations = response.json()['spellcheck']['collations']
@@ -55,7 +65,7 @@ def query(search_term=None, start_date=None, end_date=None):
                 hits = suggestion['hits']
                 spellcheck_suggestions.append([collation_query, hits])
 
-            return spellcheck_suggestions
+            return spellcheck_suggestions, elapsed_time_ms, num_found
 
         # Extract out information required and return information to display
         data = response.json()['response']['docs']
@@ -87,10 +97,7 @@ def query(search_term=None, start_date=None, end_date=None):
             processed_data.append(processed_entry)
 
         # print(processed_data)
-        processed_data_sorted = sorted(processed_data[1:], key=lambda x: x[0], reverse=True)
-        processed_data_sorted.insert(0, processed_data[0])
-
-        return processed_data_sorted, elapsed_time_ms
+        return processed_data, elapsed_time_ms, num_found
 
     except requests.exceptions.RequestException as e:
         print(f"Error querying Solr: {e}")
@@ -109,8 +116,8 @@ def index():
         start_date = request.form.get('start_date', None)
         end_date = request.form.get('end_date', None)
     
-    filtered_data, elapsed_time_ms = query(search_term, start_date, end_date)
-    return render_template('display.html', data=filtered_data, elapsed_time=elapsed_time_ms)
+    filtered_data, elapsed_time_ms, num_found = query(search_term, start_date, end_date)
+    return render_template('display.html', data=filtered_data, elapsed_time=elapsed_time_ms, num_found=num_found)
 
 if __name__ == '__main__':
     app.run(debug=True)

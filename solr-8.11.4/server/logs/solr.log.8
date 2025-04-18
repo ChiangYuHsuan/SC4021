@@ -1,125 +1,285 @@
-2025-04-17 14:19:14.073 INFO  (main) [   ] o.e.j.u.log Logging initialized @491ms to org.eclipse.jetty.util.log.Slf4jLog
-2025-04-17 14:19:14.209 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.53.v20231009; built: 2023-10-09T12:29:09.265Z; git: 27bde00a0b95a1d5bbee0eae7984f891d2d0f8c9; jvm 21+35-2513
-2025-04-17 14:19:14.214 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/malcs/Desktop/Y3S2/SC4021/SC4021/solr-8.11.4/server/contexts/] at interval 0
-2025-04-17 14:19:14.360 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2025-04-17 14:19:14.370 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2025-04-17 14:19:14.370 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2025-04-17 14:19:14.372 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
-2025-04-17 14:19:14.396 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2025-04-17 14:19:14.398 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.11.4
-2025-04-17 14:19:14.398 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2025-04-17 14:19:14.398 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/malcs/Desktop/Y3S2/SC4021/SC4021/solr-8.11.4
-2025-04-17 14:19:14.398 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2025-04-17T14:19:14.398566Z
-2025-04-17 14:19:14.404 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /Users/malcs/Desktop/Y3S2/SC4021/SC4021/solr-8.11.4/server/solr
-2025-04-17 14:19:14.405 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/malcs/Desktop/Y3S2/SC4021/SC4021/solr-8.11.4/server/solr/solr.xml
-2025-04-17 14:19:14.442 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@35dab4eb, but no JMX reporters were configured - adding default JMX reporter.
-2025-04-17 14:19:14.698 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
-2025-04-17 14:19:14.779 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@1702830d[provider=null,keyStore=null,trustStore=null]
-2025-04-17 14:19:14.779 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@1702830d[provider=null,keyStore=null,trustStore=null]
-2025-04-17 14:19:14.843 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@77a074b4[provider=null,keyStore=null,trustStore=null]
-2025-04-17 14:19:14.844 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@77a074b4[provider=null,keyStore=null,trustStore=null]
-2025-04-17 14:19:14.860 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
-2025-04-17 14:19:14.917 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
-2025-04-17 14:19:14.921 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2025-04-17 14:19:14.948 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@35dab4eb
-2025-04-17 14:19:14.949 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@35dab4eb
-2025-04-17 14:19:14.949 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@35dab4eb
-2025-04-17 14:19:14.965 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/malcs/Desktop/Y3S2/SC4021/SC4021/solr-8.11.4/server/solr
-2025-04-17 14:19:14.965 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [reddit]
-2025-04-17 14:19:14.978 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.4
-2025-04-17 14:19:14.990 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@6c345c5f{/solr,file:///Users/malcs/Desktop/Y3S2/SC4021/SC4021/solr-8.11.4/server/solr-webapp/webapp/,AVAILABLE}{/Users/malcs/Desktop/Y3S2/SC4021/SC4021/solr-8.11.4/server/solr-webapp/webapp}
-2025-04-17 14:19:14.991 WARN  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
-2025-04-17 14:19:14.994 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@29df4d43{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
-2025-04-17 14:19:14.995 INFO  (main) [   ] o.e.j.s.Server Started @1414ms
-2025-04-17 14:19:15.010 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.IndexSchema Schema name=default-config
-2025-04-17 14:19:15.128 WARN  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
-2025-04-17 14:19:15.128 WARN  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
-2025-04-17 14:19:15.128 WARN  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
-2025-04-17 14:19:15.128 WARN  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
-2025-04-17 14:19:15.128 WARN  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
-2025-04-17 14:19:15.200 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2025-04-17 14:19:15.218 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.c.CoreContainer Creating SolrCore 'reddit' using configuration from instancedir /Users/malcs/Desktop/Y3S2/SC4021/SC4021/solr-8.11.4/server/solr/reddit, trusted=true
-2025-04-17 14:19:15.229 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.reddit' (registry 'solr.core.reddit') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@35dab4eb
-2025-04-17 14:19:15.235 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.c.SolrCore [[reddit] ] Opening new SolrCore at [/Users/malcs/Desktop/Y3S2/SC4021/SC4021/solr-8.11.4/server/solr/reddit], dataDir=[/Users/malcs/Desktop/Y3S2/SC4021/SC4021/solr-8.11.4/server/solr/reddit/data/]
-2025-04-17 14:19:15.465 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2025-04-17 14:19:15.465 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2025-04-17 14:19:15.474 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2025-04-17 14:19:15.474 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2025-04-17 14:19:15.554 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/malcs/Desktop/Y3S2/SC4021/SC4021/solr-8.11.4/server/solr/reddit/conf
-2025-04-17 14:19:15.559 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2025-04-17 14:19:15.560 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=comment_content,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=2}
-2025-04-17 14:19:15.563 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2025-04-17 14:19:15.571 INFO  (searcherExecutor-15-thread-1-processing-x:reddit) [   x:reddit] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2025-04-17 14:19:15.572 INFO  (searcherExecutor-15-thread-1-processing-x:reddit) [   x:reddit] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2025-04-17 14:19:15.574 INFO  (searcherExecutor-15-thread-1-processing-x:reddit) [   x:reddit] o.a.s.c.SolrCore [reddit]  Registered new searcher autowarm time: 0 ms
-2025-04-17 14:19:18.329 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/?null)
-2025-04-17 14:19:18.617 INFO  (qtp1186339926-33) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744899558560&wt=json)
-2025-04-17 14:19:18.617 INFO  (qtp1186339926-32) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744899558560&indexInfo=false&wt=json)
-2025-04-17 14:19:18.626 INFO  (qtp1186339926-32) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744899558560} status=0 QTime=10
-2025-04-17 14:19:18.632 INFO  (qtp1186339926-33) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744899558560} status=0 QTime=16
-2025-04-17 14:19:18.640 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744899558560&wt=json)
-2025-04-17 14:19:18.642 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744899558560} status=0 QTime=2
-2025-04-17 14:19:20.696 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744899558560&indexInfo=false&wt=json)
-2025-04-17 14:19:20.697 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744899558560&wt=json)
-2025-04-17 14:19:20.697 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744899558560} status=0 QTime=1
-2025-04-17 14:19:20.700 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744899558560} status=0 QTime=3
-2025-04-17 14:19:20.701 INFO  (qtp1186339926-34) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/admin/luke?_=1744899560666&numTerms=0&show=index&wt=json)
-2025-04-17 14:19:20.702 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/admin/system?_=1744899560666&wt=json)
-2025-04-17 14:19:20.702 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/admin/ping?_=1744899558560&action=status&ts=1744899558560&wt=json)
-2025-04-17 14:19:20.703 INFO  (qtp1186339926-31) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/replication?_=1744899560666&command=details&wt=json)
-2025-04-17 14:19:20.704 INFO  (qtp1186339926-38) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1744899558560&ts=1744899558560} status=503 QTime=0
-2025-04-17 14:19:20.706 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/admin/system params={wt=json&_=1744899560666} status=0 QTime=3
-2025-04-17 14:19:20.706 INFO  (qtp1186339926-31) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/replication params={wt=json&command=details&_=1744899560666} status=0 QTime=3
-2025-04-17 14:19:20.708 INFO  (qtp1186339926-34) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1744899560666} status=0 QTime=7
-2025-04-17 14:19:23.129 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744899558560&indexInfo=false&wt=json)
-2025-04-17 14:19:23.129 INFO  (qtp1186339926-56) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744899558560&wt=json)
-2025-04-17 14:19:23.129 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744899558560} status=0 QTime=1
-2025-04-17 14:19:23.134 INFO  (qtp1186339926-56) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744899558560} status=0 QTime=4
-2025-04-17 14:19:29.040 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744899563121&df=comment_content&indent=true&q=*:*&q.op=OR)
-2025-04-17 14:19:29.059 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=*:*&df=comment_content&indent=true&q.op=OR&_=1744899563121} hits=10616 status=0 QTime=19
-2025-04-17 14:19:29.128 INFO  (qtp1186339926-56) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744899558560&indexInfo=false&wt=json)
-2025-04-17 14:19:29.130 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744899558560&wt=json)
-2025-04-17 14:19:29.130 INFO  (qtp1186339926-56) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744899558560} status=0 QTime=1
-2025-04-17 14:19:29.133 INFO  (qtp1186339926-33) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744899563121&df=comment_content&indent=true&q=*:*&q.op=OR)
-2025-04-17 14:19:29.135 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744899558560} status=0 QTime=5
-2025-04-17 14:19:29.137 INFO  (qtp1186339926-33) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=*:*&df=comment_content&indent=true&q.op=OR&_=1744899563121} hits=10616 status=0 QTime=3
-2025-04-17 14:19:32.992 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744899563121&df=comment_content&indent=true&q=wtaer&q.op=OR)
-2025-04-17 14:19:33.040 INFO  (qtp1186339926-40) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wtaer&df=comment_content&indent=true&q.op=OR&_=1744899563121} hits=0 status=0 QTime=48
-2025-04-17 14:19:33.098 INFO  (qtp1186339926-33) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744899558560&indexInfo=false&wt=json)
-2025-04-17 14:19:33.099 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744899563121&df=comment_content&indent=true&q=wtaer&q.op=OR)
-2025-04-17 14:19:33.100 INFO  (qtp1186339926-33) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744899558560} status=0 QTime=1
-2025-04-17 14:19:33.100 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744899558560&wt=json)
-2025-04-17 14:19:33.106 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744899558560} status=0 QTime=6
-2025-04-17 14:19:33.109 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wtaer&df=comment_content&indent=true&q.op=OR&_=1744899563121} hits=0 status=0 QTime=10
-2025-04-17 14:19:37.072 INFO  (qtp1186339926-56) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744899563121&df=comment_content&indent=true&q=ev&q.op=OR)
-2025-04-17 14:19:37.089 INFO  (qtp1186339926-56) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=ev&df=comment_content&indent=true&q.op=OR&_=1744899563121} hits=1643 status=0 QTime=17
-2025-04-17 14:19:37.143 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744899558560&wt=json)
-2025-04-17 14:19:37.143 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744899558560&indexInfo=false&wt=json)
-2025-04-17 14:19:37.143 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744899558560} status=0 QTime=0
-2025-04-17 14:19:37.143 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744899563121&df=comment_content&indent=true&q=ev&q.op=OR)
-2025-04-17 14:19:37.144 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744899558560} status=0 QTime=1
-2025-04-17 14:19:37.145 INFO  (qtp1186339926-40) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=ev&df=comment_content&indent=true&q.op=OR&_=1744899563121} hits=1643 status=0 QTime=2
-2025-04-17 14:19:56.071 INFO  (qtp1186339926-56) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?q=%2A%3A%2A&q.op=AND&fl=comment_score%2C+comment_date%2C+comment_content%2C+sentiment_score&df=comment_content&wt=json&rows=1000&defType=edismax)
-2025-04-17 14:19:56.076 INFO  (qtp1186339926-56) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=*:*&df=comment_content&defType=edismax&fl=comment_score,+comment_date,+comment_content,+sentiment_score&q.op=AND&rows=1000&wt=json} hits=10616 status=0 QTime=5
-2025-04-17 14:19:58.739 INFO  (qtp1186339926-33) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?q=water&q.op=AND&fl=comment_score%2C+comment_date%2C+comment_content%2C+sentiment_score&df=comment_content&wt=json&rows=1000&defType=edismax)
-2025-04-17 14:19:58.742 INFO  (qtp1186339926-33) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=water&df=comment_content&defType=edismax&fl=comment_score,+comment_date,+comment_content,+sentiment_score&q.op=AND&rows=1000&wt=json} hits=100 status=0 QTime=2
-2025-04-17 14:20:01.885 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?q=water+salt&q.op=AND&fl=comment_score%2C+comment_date%2C+comment_content%2C+sentiment_score&df=comment_content&wt=json&rows=1000&defType=edismax)
-2025-04-17 14:20:01.890 INFO  (qtp1186339926-36) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=water+salt&df=comment_content&defType=edismax&fl=comment_score,+comment_date,+comment_content,+sentiment_score&q.op=AND&rows=1000&wt=json} hits=20 status=0 QTime=5
-2025-04-17 14:20:05.797 INFO  (qtp1186339926-39) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?q=salt+water&q.op=AND&fl=comment_score%2C+comment_date%2C+comment_content%2C+sentiment_score&df=comment_content&wt=json&rows=1000&defType=edismax)
-2025-04-17 14:20:05.800 INFO  (qtp1186339926-39) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=salt+water&df=comment_content&defType=edismax&fl=comment_score,+comment_date,+comment_content,+sentiment_score&q.op=AND&rows=1000&wt=json} hits=20 status=0 QTime=2
-2025-04-17 14:20:08.916 INFO  (qtp1186339926-56) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?q=ev&q.op=AND&fl=comment_score%2C+comment_date%2C+comment_content%2C+sentiment_score&df=comment_content&wt=json&rows=1000&defType=edismax)
-2025-04-17 14:20:08.926 INFO  (qtp1186339926-56) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=ev&df=comment_content&defType=edismax&fl=comment_score,+comment_date,+comment_content,+sentiment_score&q.op=AND&rows=1000&wt=json} hits=1643 status=0 QTime=10
-2025-04-17 14:20:21.246 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@29df4d43{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
-2025-04-17 14:20:21.246 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
-2025-04-17 14:20:21.248 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=595663369
-2025-04-17 14:20:21.249 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.c.SolrCore [reddit]  CLOSING SolrCore org.apache.solr.core.SolrCore@319bc5ee
-2025-04-17 14:20:21.249 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.reddit tag=SolrCore@319bc5ee
-2025-04-17 14:20:21.249 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@d74aea7: rootName = null, domain = solr.core.reddit, service url = null, agent id = null] for registry solr.core.reddit/com.codahale.metrics.MetricRegistry@354fbfa7
-2025-04-17 14:20:21.257 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
-2025-04-17 14:20:21.264 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
-2025-04-17 14:20:21.264 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@66f28a1f: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node/com.codahale.metrics.MetricRegistry@31eb9dda
-2025-04-17 14:20:21.266 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
-2025-04-17 14:20:21.266 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2b38b1f: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm/com.codahale.metrics.MetricRegistry@3460f602
-2025-04-17 14:20:21.267 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
-2025-04-17 14:20:21.267 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1d50a7ca: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@372e74ef
-2025-04-17 14:20:21.271 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@6c345c5f{/solr,null,STOPPED}{/Users/malcs/Desktop/Y3S2/SC4021/SC4021/solr-8.11.4/server/solr-webapp/webapp}
+2025-04-17 15:30:42.879 INFO  (main) [   ] o.e.j.u.log Logging initialized @490ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-04-17 15:30:43.023 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.53.v20231009; built: 2023-10-09T12:29:09.265Z; git: 27bde00a0b95a1d5bbee0eae7984f891d2d0f8c9; jvm 21+35-2513
+2025-04-17 15:30:43.028 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/malcs/Desktop/Y3S2/SC4021/SC4021/solr-8.11.4/server/contexts/] at interval 0
+2025-04-17 15:30:43.178 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2025-04-17 15:30:43.188 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2025-04-17 15:30:43.188 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2025-04-17 15:30:43.189 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2025-04-17 15:30:43.216 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2025-04-17 15:30:43.219 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.11.4
+2025-04-17 15:30:43.219 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2025-04-17 15:30:43.219 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/malcs/Desktop/Y3S2/SC4021/SC4021/solr-8.11.4
+2025-04-17 15:30:43.219 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2025-04-17T15:30:43.219489Z
+2025-04-17 15:30:43.226 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /Users/malcs/Desktop/Y3S2/SC4021/SC4021/solr-8.11.4/server/solr
+2025-04-17 15:30:43.227 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/malcs/Desktop/Y3S2/SC4021/SC4021/solr-8.11.4/server/solr/solr.xml
+2025-04-17 15:30:43.269 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@5f049ea1, but no JMX reporters were configured - adding default JMX reporter.
+2025-04-17 15:30:43.593 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2025-04-17 15:30:43.679 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@684b31de[provider=null,keyStore=null,trustStore=null]
+2025-04-17 15:30:43.679 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@684b31de[provider=null,keyStore=null,trustStore=null]
+2025-04-17 15:30:43.746 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@22eaa86e[provider=null,keyStore=null,trustStore=null]
+2025-04-17 15:30:43.746 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@22eaa86e[provider=null,keyStore=null,trustStore=null]
+2025-04-17 15:30:43.762 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2025-04-17 15:30:43.821 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2025-04-17 15:30:43.826 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2025-04-17 15:30:43.852 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5f049ea1
+2025-04-17 15:30:43.853 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5f049ea1
+2025-04-17 15:30:43.853 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5f049ea1
+2025-04-17 15:30:43.871 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/malcs/Desktop/Y3S2/SC4021/SC4021/solr-8.11.4/server/solr
+2025-04-17 15:30:43.871 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [reddit]
+2025-04-17 15:30:43.885 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.4
+2025-04-17 15:30:43.897 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@1568159{/solr,file:///Users/malcs/Desktop/Y3S2/SC4021/SC4021/solr-8.11.4/server/solr-webapp/webapp/,AVAILABLE}{/Users/malcs/Desktop/Y3S2/SC4021/SC4021/solr-8.11.4/server/solr-webapp/webapp}
+2025-04-17 15:30:43.898 WARN  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2025-04-17 15:30:43.902 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@29df4d43{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2025-04-17 15:30:43.902 INFO  (main) [   ] o.e.j.s.Server Started @1513ms
+2025-04-17 15:30:43.919 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.IndexSchema Schema name=default-config
+2025-04-17 15:30:44.057 WARN  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2025-04-17 15:30:44.057 WARN  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2025-04-17 15:30:44.057 WARN  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2025-04-17 15:30:44.057 WARN  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2025-04-17 15:30:44.057 WARN  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2025-04-17 15:30:44.125 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2025-04-17 15:30:44.140 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.c.CoreContainer Creating SolrCore 'reddit' using configuration from instancedir /Users/malcs/Desktop/Y3S2/SC4021/SC4021/solr-8.11.4/server/solr/reddit, trusted=true
+2025-04-17 15:30:44.151 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.reddit' (registry 'solr.core.reddit') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5f049ea1
+2025-04-17 15:30:44.157 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.c.SolrCore [[reddit] ] Opening new SolrCore at [/Users/malcs/Desktop/Y3S2/SC4021/SC4021/solr-8.11.4/server/solr/reddit], dataDir=[/Users/malcs/Desktop/Y3S2/SC4021/SC4021/solr-8.11.4/server/solr/reddit/data/]
+2025-04-17 15:30:44.382 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2025-04-17 15:30:44.382 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2025-04-17 15:30:44.391 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2025-04-17 15:30:44.391 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2025-04-17 15:30:44.479 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/malcs/Desktop/Y3S2/SC4021/SC4021/solr-8.11.4/server/solr/reddit/conf
+2025-04-17 15:30:44.484 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2025-04-17 15:30:44.486 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=comment_content,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=2}
+2025-04-17 15:30:44.489 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2025-04-17 15:30:44.497 INFO  (searcherExecutor-15-thread-1-processing-x:reddit) [   x:reddit] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2025-04-17 15:30:44.497 INFO  (searcherExecutor-15-thread-1-processing-x:reddit) [   x:reddit] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2025-04-17 15:30:44.500 INFO  (searcherExecutor-15-thread-1-processing-x:reddit) [   x:reddit] o.a.s.c.SolrCore [reddit]  Registered new searcher autowarm time: 0 ms
+2025-04-17 15:31:28.444 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?q=%2A%3A%2A&q.op=AND&fl=comment_score%2C+comment_date%2C+comment_content%2C+sentiment_score&df=comment_content&wt=json&rows=100000&defType=edismax)
+2025-04-17 15:31:28.476 INFO  (qtp1186339926-38) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=*:*&df=comment_content&defType=edismax&fl=comment_score,+comment_date,+comment_content,+sentiment_score&q.op=AND&rows=100000&wt=json} hits=10616 status=0 QTime=32
+2025-04-17 15:31:44.387 INFO  (qtp1186339926-33) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?q=Should+I+buy+a+Tesla%3F&q.op=AND&fl=comment_score%2C+comment_date%2C+comment_content%2C+sentiment_score&df=comment_content&wt=json&rows=100000&defType=edismax)
+2025-04-17 15:31:44.439 INFO  (qtp1186339926-33) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=Should+I+buy+a+Tesla?&df=comment_content&defType=edismax&fl=comment_score,+comment_date,+comment_content,+sentiment_score&q.op=AND&rows=100000&wt=json} hits=0 status=0 QTime=52
+2025-04-17 15:31:57.419 INFO  (qtp1186339926-34) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?q=%2A%3A%2A&q.op=AND&fl=comment_score%2C+comment_date%2C+comment_content%2C+sentiment_score&df=comment_content&wt=json&rows=100000&defType=edismax)
+2025-04-17 15:31:57.428 INFO  (qtp1186339926-34) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=*:*&df=comment_content&defType=edismax&fl=comment_score,+comment_date,+comment_content,+sentiment_score&q.op=AND&rows=100000&wt=json} hits=10616 status=0 QTime=9
+2025-04-17 15:32:18.286 INFO  (qtp1186339926-31) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?q=salt+water+buy&q.op=AND&fl=comment_score%2C+comment_date%2C+comment_content%2C+sentiment_score&df=comment_content&wt=json&rows=100000&defType=edismax)
+2025-04-17 15:32:18.318 INFO  (qtp1186339926-31) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=salt+water+buy&df=comment_content&defType=edismax&fl=comment_score,+comment_date,+comment_content,+sentiment_score&q.op=AND&rows=100000&wt=json} hits=0 status=0 QTime=32
+2025-04-17 15:33:00.011 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/?null)
+2025-04-17 15:33:00.333 INFO  (qtp1186339926-39) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744903980276&indexInfo=false&wt=json)
+2025-04-17 15:33:00.335 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744903980276&wt=json)
+2025-04-17 15:33:00.339 INFO  (qtp1186339926-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744903980276} status=0 QTime=4
+2025-04-17 15:33:00.347 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744903980276} status=0 QTime=11
+2025-04-17 15:33:00.349 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744903980276&wt=json)
+2025-04-17 15:33:00.350 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744903980276} status=0 QTime=1
+2025-04-17 15:33:02.248 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744903980276&indexInfo=false&wt=json)
+2025-04-17 15:33:02.249 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744903980276} status=0 QTime=11
+2025-04-17 15:33:02.251 INFO  (qtp1186339926-34) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744903980276&wt=json)
+2025-04-17 15:33:02.252 INFO  (qtp1186339926-39) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/admin/ping?_=1744903980276&action=status&ts=1744903980276&wt=json)
+2025-04-17 15:33:02.252 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/admin/system?_=1744903982230&wt=json)
+2025-04-17 15:33:02.252 INFO  (qtp1186339926-32) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/admin/luke?_=1744903982230&numTerms=0&show=index&wt=json)
+2025-04-17 15:33:02.252 INFO  (qtp1186339926-33) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/replication?_=1744903982230&command=details&wt=json)
+2025-04-17 15:33:02.254 INFO  (qtp1186339926-39) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1744903980276&ts=1744903980276} status=503 QTime=2
+2025-04-17 15:33:02.254 INFO  (qtp1186339926-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744903980276} status=0 QTime=3
+2025-04-17 15:33:02.255 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/admin/system params={wt=json&_=1744903982230} status=0 QTime=3
+2025-04-17 15:33:02.259 INFO  (qtp1186339926-32) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1744903982230} status=0 QTime=6
+2025-04-17 15:33:02.259 INFO  (qtp1186339926-33) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/replication params={wt=json&command=details&_=1744903982230} status=0 QTime=7
+2025-04-17 15:33:04.770 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744903980276&wt=json)
+2025-04-17 15:33:04.770 INFO  (qtp1186339926-31) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744903980276&indexInfo=false&wt=json)
+2025-04-17 15:33:04.771 INFO  (qtp1186339926-31) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744903980276} status=0 QTime=0
+2025-04-17 15:33:04.775 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744903980276} status=0 QTime=5
+2025-04-17 15:33:09.107 INFO  (qtp1186339926-33) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744903984763&df=comment_content&indent=true&q=*:*&q.op=OR)
+2025-04-17 15:33:09.110 INFO  (qtp1186339926-33) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=*:*&df=comment_content&indent=true&q.op=OR&_=1744903984763} hits=10616 status=0 QTime=3
+2025-04-17 15:33:09.175 INFO  (qtp1186339926-32) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744903980276&wt=json)
+2025-04-17 15:33:09.175 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744903980276&indexInfo=false&wt=json)
+2025-04-17 15:33:09.176 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744903980276} status=0 QTime=0
+2025-04-17 15:33:09.176 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744903984763&df=comment_content&indent=true&q=*:*&q.op=OR)
+2025-04-17 15:33:09.181 INFO  (qtp1186339926-32) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744903980276} status=0 QTime=6
+2025-04-17 15:33:09.187 INFO  (qtp1186339926-38) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=*:*&df=comment_content&indent=true&q.op=OR&_=1744903984763} hits=10616 status=0 QTime=10
+2025-04-17 15:33:13.123 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744903984763&df=comment_content&indent=true&q=salt+water&q.op=OR)
+2025-04-17 15:33:13.128 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=salt+water&df=comment_content&indent=true&q.op=OR&_=1744903984763} hits=107 status=0 QTime=5
+2025-04-17 15:33:13.189 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744903980276&indexInfo=false&wt=json)
+2025-04-17 15:33:13.189 INFO  (qtp1186339926-31) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744903980276&wt=json)
+2025-04-17 15:33:13.190 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744903980276} status=0 QTime=1
+2025-04-17 15:33:13.191 INFO  (qtp1186339926-33) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744903984763&df=comment_content&indent=true&q=salt+water&q.op=OR)
+2025-04-17 15:33:13.196 INFO  (qtp1186339926-33) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=salt+water&df=comment_content&indent=true&q.op=OR&_=1744903984763} hits=107 status=0 QTime=5
+2025-04-17 15:33:13.197 INFO  (qtp1186339926-31) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744903980276} status=0 QTime=7
+2025-04-17 15:33:16.411 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744903984763&df=comment_content&indent=true&q=salt+water+buy&q.op=OR)
+2025-04-17 15:33:16.414 INFO  (qtp1186339926-36) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=salt+water+buy&df=comment_content&indent=true&q.op=OR&_=1744903984763} hits=501 status=0 QTime=3
+2025-04-17 15:33:16.472 INFO  (qtp1186339926-31) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744903980276&indexInfo=false&wt=json)
+2025-04-17 15:33:16.472 INFO  (qtp1186339926-32) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744903980276&wt=json)
+2025-04-17 15:33:16.472 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744903984763&df=comment_content&indent=true&q=salt+water+buy&q.op=OR)
+2025-04-17 15:33:16.472 INFO  (qtp1186339926-31) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744903980276} status=0 QTime=0
+2025-04-17 15:33:16.474 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=salt+water+buy&df=comment_content&indent=true&q.op=OR&_=1744903984763} hits=501 status=0 QTime=1
+2025-04-17 15:33:16.478 INFO  (qtp1186339926-32) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744903980276} status=0 QTime=6
+2025-04-17 15:33:18.338 INFO  (qtp1186339926-33) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744903984763&df=comment_content&indent=true&q=salt+water+buy&q.op=OR)
+2025-04-17 15:33:18.340 INFO  (qtp1186339926-33) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=salt+water+buy&df=comment_content&indent=true&q.op=OR&_=1744903984763} hits=501 status=0 QTime=2
+2025-04-17 15:33:29.754 INFO  (qtp1186339926-32) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744903984763&df=comment_content&indent=true&q=should+i+buy+a+tesla%3F&q.op=OR)
+2025-04-17 15:33:29.759 INFO  (qtp1186339926-32) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=should+i+buy+a+tesla?&df=comment_content&indent=true&q.op=OR&_=1744903984763} hits=969 status=0 QTime=5
+2025-04-17 15:33:29.820 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744903980276&wt=json)
+2025-04-17 15:33:29.821 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744903984763&df=comment_content&indent=true&q=should+i+buy+a+tesla%3F&q.op=OR)
+2025-04-17 15:33:29.821 INFO  (qtp1186339926-33) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744903980276&indexInfo=false&wt=json)
+2025-04-17 15:33:29.824 INFO  (qtp1186339926-33) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744903980276} status=0 QTime=3
+2025-04-17 15:33:29.825 INFO  (qtp1186339926-36) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=should+i+buy+a+tesla?&df=comment_content&indent=true&q.op=OR&_=1744903984763} hits=969 status=0 QTime=4
+2025-04-17 15:33:29.827 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744903980276} status=0 QTime=6
+2025-04-17 15:37:42.266 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?q=salt+water+buy&q.op=AND&fl=comment_score%2C+comment_date%2C+comment_content%2C+sentiment_score&df=comment_content&wt=json&rows=100000&defType=edismax)
+2025-04-17 15:37:42.280 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=salt+water+buy&df=comment_content&defType=edismax&fl=comment_score,+comment_date,+comment_content,+sentiment_score&q.op=AND&rows=100000&wt=json} hits=0 status=0 QTime=14
+2025-04-17 15:37:59.251 INFO  (qtp1186339926-32) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?q=salt+water+buy&q.op=AND&fl=comment_score%2C+comment_date%2C+comment_content%2C+sentiment_score&df=comment_content&wt=json&rows=100000&defType=edismax)
+2025-04-17 15:37:59.265 INFO  (qtp1186339926-32) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=salt+water+buy&df=comment_content&defType=edismax&fl=comment_score,+comment_date,+comment_content,+sentiment_score&q.op=AND&rows=100000&wt=json} hits=0 status=0 QTime=13
+2025-04-17 15:38:45.302 INFO  (qtp1186339926-31) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?q=salt+water+buy&q.op=AND&fl=comment_score%2C+comment_date%2C+comment_content%2C+sentiment_score&df=comment_content&wt=json&rows=100000&defType=edismax)
+2025-04-17 15:38:45.313 INFO  (qtp1186339926-31) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=salt+water+buy&df=comment_content&defType=edismax&fl=comment_score,+comment_date,+comment_content,+sentiment_score&q.op=AND&rows=100000&wt=json} hits=0 status=0 QTime=11
+2025-04-17 15:38:53.294 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?q=salt+water+buy&q.op=AND&fl=comment_score%2C+comment_date%2C+comment_content%2C+sentiment_score&df=comment_content&wt=json&rows=100000&defType=edismax)
+2025-04-17 15:38:53.307 INFO  (qtp1186339926-40) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=salt+water+buy&df=comment_content&defType=edismax&fl=comment_score,+comment_date,+comment_content,+sentiment_score&q.op=AND&rows=100000&wt=json} hits=0 status=0 QTime=13
+2025-04-17 15:39:46.237 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?q=%2A%3A%2A&q.op=AND&fl=comment_score%2C+comment_date%2C+comment_content%2C+sentiment_score&df=comment_content&wt=json&rows=100000&defType=edismax)
+2025-04-17 15:39:46.246 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=*:*&df=comment_content&defType=edismax&fl=comment_score,+comment_date,+comment_content,+sentiment_score&q.op=AND&rows=100000&wt=json} hits=10616 status=0 QTime=8
+2025-04-17 15:39:52.948 INFO  (qtp1186339926-32) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?q=water&q.op=AND&fl=comment_score%2C+comment_date%2C+comment_content%2C+sentiment_score&df=comment_content&wt=json&rows=100000&defType=edismax)
+2025-04-17 15:39:52.950 INFO  (qtp1186339926-32) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=water&df=comment_content&defType=edismax&fl=comment_score,+comment_date,+comment_content,+sentiment_score&q.op=AND&rows=100000&wt=json} hits=100 status=0 QTime=2
+2025-04-17 15:39:55.562 INFO  (qtp1186339926-31) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?q=water+salt&q.op=AND&fl=comment_score%2C+comment_date%2C+comment_content%2C+sentiment_score&df=comment_content&wt=json&rows=100000&defType=edismax)
+2025-04-17 15:39:55.565 INFO  (qtp1186339926-31) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=water+salt&df=comment_content&defType=edismax&fl=comment_score,+comment_date,+comment_content,+sentiment_score&q.op=AND&rows=100000&wt=json} hits=20 status=0 QTime=3
+2025-04-17 15:39:58.778 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?q=water+salt+buy&q.op=AND&fl=comment_score%2C+comment_date%2C+comment_content%2C+sentiment_score&df=comment_content&wt=json&rows=100000&defType=edismax)
+2025-04-17 15:39:58.787 INFO  (qtp1186339926-40) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=water+salt+buy&df=comment_content&defType=edismax&fl=comment_score,+comment_date,+comment_content,+sentiment_score&q.op=AND&rows=100000&wt=json} hits=0 status=0 QTime=8
+2025-04-17 15:41:01.738 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/?null)
+2025-04-17 15:41:01.896 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744904461869&indexInfo=false&wt=json)
+2025-04-17 15:41:01.896 INFO  (qtp1186339926-32) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744904461869&wt=json)
+2025-04-17 15:41:01.899 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744904461869} status=0 QTime=4
+2025-04-17 15:41:01.901 INFO  (qtp1186339926-34) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744904461889&df=comment_content&indent=true&q=should+i+buy+a+tesla%3F&q.op=OR)
+2025-04-17 15:41:01.903 INFO  (qtp1186339926-32) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744904461869} status=0 QTime=6
+2025-04-17 15:41:01.904 INFO  (qtp1186339926-34) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=should+i+buy+a+tesla?&df=comment_content&indent=true&q.op=OR&_=1744904461889} hits=969 status=0 QTime=3
+2025-04-17 15:41:04.080 INFO  (qtp1186339926-31) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744904461889&df=comment_content&indent=true&q=should+i+buy+a+tesla%3F&q.op=OR)
+2025-04-17 15:41:04.082 INFO  (qtp1186339926-31) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=should+i+buy+a+tesla?&df=comment_content&indent=true&q.op=OR&_=1744904461889} hits=969 status=0 QTime=2
+2025-04-17 15:41:13.303 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?q=water+salt&q.op=AND&fl=comment_score%2C+comment_date%2C+comment_content%2C+sentiment_score&df=comment_content&wt=json&rows=100000&defType=edismax)
+2025-04-17 15:41:13.304 INFO  (qtp1186339926-40) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=water+salt&df=comment_content&defType=edismax&fl=comment_score,+comment_date,+comment_content,+sentiment_score&q.op=AND&rows=100000&wt=json} hits=20 status=0 QTime=1
+2025-04-17 15:41:15.610 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?q=water+salt&q.op=AND&fl=comment_score%2C+comment_date%2C+comment_content%2C+sentiment_score&df=comment_content&wt=json&rows=100000&defType=edismax)
+2025-04-17 15:41:15.612 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=water+salt&df=comment_content&defType=edismax&fl=comment_score,+comment_date,+comment_content,+sentiment_score&q.op=AND&rows=100000&wt=json} hits=20 status=0 QTime=2
+2025-04-17 15:41:18.607 INFO  (qtp1186339926-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?q=should+i+buy+a+tesla%3F&q.op=AND&fl=comment_score%2C+comment_date%2C+comment_content%2C+sentiment_score&df=comment_content&wt=json&rows=100000&defType=edismax)
+2025-04-17 15:41:18.609 INFO  (qtp1186339926-59) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=should+i+buy+a+tesla?&df=comment_content&defType=edismax&fl=comment_score,+comment_date,+comment_content,+sentiment_score&q.op=AND&rows=100000&wt=json} hits=0 status=0 QTime=1
+2025-04-17 15:45:16.774 INFO  (qtp1186339926-32) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744904461889&df=comment_content&indent=true&q=should+i+buy+a+tesla%3F&q.op=AND)
+2025-04-17 15:45:16.778 INFO  (qtp1186339926-32) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=should+i+buy+a+tesla?&df=comment_content&indent=true&q.op=AND&_=1744904461889} hits=0 status=0 QTime=5
+2025-04-17 15:45:16.838 INFO  (qtp1186339926-34) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744904461869&indexInfo=false&wt=json)
+2025-04-17 15:45:16.839 INFO  (qtp1186339926-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744904461869} status=0 QTime=0
+2025-04-17 15:45:16.842 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744904461869&wt=json)
+2025-04-17 15:45:16.844 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744904461889&df=comment_content&indent=true&q=should+i+buy+a+tesla%3F&q.op=AND)
+2025-04-17 15:45:16.847 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=should+i+buy+a+tesla?&df=comment_content&indent=true&q.op=AND&_=1744904461889} hits=0 status=0 QTime=2
+2025-04-17 15:45:16.849 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744904461869} status=0 QTime=7
+2025-04-17 15:45:21.421 INFO  (qtp1186339926-64) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744904461889&df=comment_content&indent=true&q=should+i+buy+a+tesla%3F&q.op=OR)
+2025-04-17 15:45:21.424 INFO  (qtp1186339926-64) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=should+i+buy+a+tesla?&df=comment_content&indent=true&q.op=OR&_=1744904461889} hits=969 status=0 QTime=2
+2025-04-17 15:45:21.489 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744904461869&wt=json)
+2025-04-17 15:45:21.493 INFO  (qtp1186339926-32) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744904461889&df=comment_content&indent=true&q=should+i+buy+a+tesla%3F&q.op=OR)
+2025-04-17 15:45:21.495 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744904461869&indexInfo=false&wt=json)
+2025-04-17 15:45:21.495 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744904461869} status=0 QTime=2
+2025-04-17 15:45:21.496 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744904461869} status=0 QTime=6
+2025-04-17 15:45:21.497 INFO  (qtp1186339926-32) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=should+i+buy+a+tesla?&df=comment_content&indent=true&q.op=OR&_=1744904461889} hits=969 status=0 QTime=3
+2025-04-17 15:45:29.568 INFO  (qtp1186339926-34) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744904461889&df=comment_content&indent=true&q=salt+water&q.op=OR)
+2025-04-17 15:45:29.570 INFO  (qtp1186339926-34) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=salt+water&df=comment_content&indent=true&q.op=OR&_=1744904461889} hits=107 status=0 QTime=1
+2025-04-17 15:45:29.629 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744904461869&wt=json)
+2025-04-17 15:45:29.630 INFO  (qtp1186339926-64) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744904461889&df=comment_content&indent=true&q=salt+water&q.op=OR)
+2025-04-17 15:45:29.632 INFO  (qtp1186339926-32) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744904461869&indexInfo=false&wt=json)
+2025-04-17 15:45:29.632 INFO  (qtp1186339926-64) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=salt+water&df=comment_content&indent=true&q.op=OR&_=1744904461889} hits=107 status=0 QTime=2
+2025-04-17 15:45:29.633 INFO  (qtp1186339926-32) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744904461869} status=0 QTime=4
+2025-04-17 15:45:29.633 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744904461869} status=0 QTime=5
+2025-04-17 15:45:32.036 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744904461889&df=comment_content&indent=true&q=salt+water&q.op=AND)
+2025-04-17 15:45:32.039 INFO  (qtp1186339926-36) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=salt+water&df=comment_content&indent=true&q.op=AND&_=1744904461889} hits=20 status=0 QTime=2
+2025-04-17 15:45:32.101 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744904461869&wt=json)
+2025-04-17 15:45:32.101 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744904461869&indexInfo=false&wt=json)
+2025-04-17 15:45:32.102 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744904461869} status=0 QTime=0
+2025-04-17 15:45:32.107 INFO  (qtp1186339926-34) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744904461889&df=comment_content&indent=true&q=salt+water&q.op=AND)
+2025-04-17 15:45:32.107 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744904461869} status=0 QTime=6
+2025-04-17 15:45:32.108 INFO  (qtp1186339926-34) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=salt+water&df=comment_content&indent=true&q.op=AND&_=1744904461889} hits=20 status=0 QTime=1
+2025-04-17 15:45:42.214 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744904461889&df=comment_content&indent=true&q=salt+water+buy&q.op=AND)
+2025-04-17 15:45:42.222 INFO  (qtp1186339926-36) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=salt+water+buy&df=comment_content&indent=true&q.op=AND&_=1744904461889} hits=0 status=0 QTime=7
+2025-04-17 15:45:42.281 INFO  (qtp1186339926-34) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744904461869&indexInfo=false&wt=json)
+2025-04-17 15:45:42.282 INFO  (qtp1186339926-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744904461869} status=0 QTime=1
+2025-04-17 15:45:42.286 INFO  (qtp1186339926-64) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744904461869&wt=json)
+2025-04-17 15:45:42.286 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744904461889&df=comment_content&indent=true&q=salt+water+buy&q.op=AND)
+2025-04-17 15:45:42.289 INFO  (qtp1186339926-64) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744904461869} status=0 QTime=2
+2025-04-17 15:45:42.291 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=salt+water+buy&df=comment_content&indent=true&q.op=AND&_=1744904461889} hits=0 status=0 QTime=4
+2025-04-17 15:45:46.891 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744904461889&df=comment_content&indent=true&q=salt+water+buy&q.op=OR)
+2025-04-17 15:45:46.892 INFO  (qtp1186339926-40) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=salt+water+buy&df=comment_content&indent=true&q.op=OR&_=1744904461889} hits=501 status=0 QTime=1
+2025-04-17 15:45:46.957 INFO  (qtp1186339926-34) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744904461869&wt=json)
+2025-04-17 15:45:46.958 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744904461889&df=comment_content&indent=true&q=salt+water+buy&q.op=OR)
+2025-04-17 15:45:46.959 INFO  (qtp1186339926-36) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=salt+water+buy&df=comment_content&indent=true&q.op=OR&_=1744904461889} hits=501 status=0 QTime=1
+2025-04-17 15:45:46.960 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744904461869&indexInfo=false&wt=json)
+2025-04-17 15:45:46.962 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744904461869} status=0 QTime=4
+2025-04-17 15:45:46.963 INFO  (qtp1186339926-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744904461869} status=0 QTime=6
+2025-04-17 15:47:25.512 INFO  (qtp1186339926-64) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744904461889&df=comment_content&indent=true&q=should+buy+tesla&q.op=AND)
+2025-04-17 15:47:25.547 INFO  (qtp1186339926-64) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=should+buy+tesla&df=comment_content&indent=true&q.op=AND&_=1744904461889} hits=10 status=0 QTime=35
+2025-04-17 15:47:25.613 INFO  (qtp1186339926-32) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744904461869&wt=json)
+2025-04-17 15:47:25.612 INFO  (qtp1186339926-34) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744904461869&indexInfo=false&wt=json)
+2025-04-17 15:47:25.613 INFO  (qtp1186339926-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744904461869} status=0 QTime=0
+2025-04-17 15:47:25.614 INFO  (qtp1186339926-33) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744904461889&df=comment_content&indent=true&q=should+buy+tesla&q.op=AND)
+2025-04-17 15:47:25.621 INFO  (qtp1186339926-33) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=should+buy+tesla&df=comment_content&indent=true&q.op=AND&_=1744904461889} hits=10 status=0 QTime=7
+2025-04-17 15:47:25.621 INFO  (qtp1186339926-32) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744904461869} status=0 QTime=8
+2025-04-17 15:47:28.283 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744904461889&df=comment_content&indent=true&q=should+buy+tesla&q.op=AND)
+2025-04-17 15:47:28.287 INFO  (qtp1186339926-40) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=should+buy+tesla&df=comment_content&indent=true&q.op=AND&_=1744904461889} hits=10 status=0 QTime=3
+2025-04-17 15:47:29.105 INFO  (qtp1186339926-32) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744904461889&df=comment_content&indent=true&q=should+buy+tesla&q.op=AND)
+2025-04-17 15:47:29.109 INFO  (qtp1186339926-32) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=should+buy+tesla&df=comment_content&indent=true&q.op=AND&_=1744904461889} hits=10 status=0 QTime=4
+2025-04-17 15:47:30.952 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744904461889&df=comment_content&indent=true&q=should+buy+tesla&q.op=AND)
+2025-04-17 15:47:30.954 INFO  (qtp1186339926-40) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=should+buy+tesla&df=comment_content&indent=true&q.op=AND&_=1744904461889} hits=10 status=0 QTime=2
+2025-04-17 15:47:31.498 INFO  (qtp1186339926-32) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744904461889&df=comment_content&indent=true&q=should+buy+tesla&q.op=AND)
+2025-04-17 15:47:31.501 INFO  (qtp1186339926-32) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=should+buy+tesla&df=comment_content&indent=true&q.op=AND&_=1744904461889} hits=10 status=0 QTime=3
+2025-04-17 15:49:13.822 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744904461869&wt=json)
+2025-04-17 15:49:13.822 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744904461869&indexInfo=false&wt=json)
+2025-04-17 15:49:13.823 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/admin/luke?_=1744904953814&show=schema&wt=json)
+2025-04-17 15:49:13.823 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744904461869} status=0 QTime=1
+2025-04-17 15:49:13.827 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744904461869} status=0 QTime=5
+2025-04-17 15:49:13.835 INFO  (qtp1186339926-36) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1744904953814} status=0 QTime=12
+2025-04-17 15:49:27.068 INFO  (qtp1186339926-60) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744904461869&indexInfo=false&wt=json)
+2025-04-17 15:49:27.069 INFO  (qtp1186339926-34) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744904461869&wt=json)
+2025-04-17 15:49:27.070 INFO  (qtp1186339926-32) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/admin/luke?_=1744904953814&show=schema&wt=json)
+2025-04-17 15:49:27.071 INFO  (qtp1186339926-60) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744904461869} status=0 QTime=8
+2025-04-17 15:49:27.071 INFO  (qtp1186339926-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/analysis/field?_=1744904953814&analysis.fieldname=comment_content&analysis.fieldvalue=should+i+buy+a+tesla&analysis.query=should+i+buy+a+tesla&analysis.showmatch=true&verbose_output=1&wt=json)
+2025-04-17 15:49:27.071 INFO  (qtp1186339926-59) [   x:reddit] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /analysis/field,class = solr.FieldAnalysisRequestHandler,attributes = {class=solr.FieldAnalysisRequestHandler, startup=lazy, useParams=_ANALYSIS_FIELD, name=/analysis/field},args = {startup=lazy,useParams=_ANALYSIS_FIELD}} 
+2025-04-17 15:49:27.073 INFO  (qtp1186339926-32) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1744904953814} status=0 QTime=3
+2025-04-17 15:49:27.076 INFO  (qtp1186339926-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744904461869} status=0 QTime=13
+2025-04-17 15:49:27.086 INFO  (qtp1186339926-59) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/analysis/field params={analysis.fieldvalue=should+i+buy+a+tesla&analysis.fieldname=comment_content&analysis.showmatch=true&verbose_output=1&analysis.query=should+i+buy+a+tesla&wt=json&_=1744904953814} status=0 QTime=14
+2025-04-17 15:49:52.823 INFO  (qtp1186339926-31) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744904461869&indexInfo=false&wt=json)
+2025-04-17 15:49:52.823 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744904461869&wt=json)
+2025-04-17 15:49:52.824 INFO  (qtp1186339926-31) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744904461869} status=0 QTime=0
+2025-04-17 15:49:52.826 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744904461869} status=0 QTime=2
+2025-04-17 15:49:58.415 INFO  (qtp1186339926-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744904461889&indent=true&q=should+i+buy+a+tesla&q.op=OR)
+2025-04-17 15:49:58.424 INFO  (qtp1186339926-59) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=should+i+buy+a+tesla&indent=true&q.op=OR&_=1744904461889} hits=2369 status=0 QTime=9
+2025-04-17 15:49:58.494 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744904461869&indexInfo=false&wt=json)
+2025-04-17 15:49:58.494 INFO  (qtp1186339926-31) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744904461869&wt=json)
+2025-04-17 15:49:58.495 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744904461869} status=0 QTime=0
+2025-04-17 15:49:58.496 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744904461889&indent=true&q=should+i+buy+a+tesla&q.op=OR)
+2025-04-17 15:49:58.500 INFO  (qtp1186339926-36) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=should+i+buy+a+tesla&indent=true&q.op=OR&_=1744904461889} hits=2369 status=0 QTime=4
+2025-04-17 15:49:58.500 INFO  (qtp1186339926-31) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744904461869} status=0 QTime=6
+2025-04-17 15:50:02.240 INFO  (qtp1186339926-34) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744904461889&indent=true&q=should+i+buy+a+tesla&q.op=AND)
+2025-04-17 15:50:02.251 INFO  (qtp1186339926-34) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=should+i+buy+a+tesla&indent=true&q.op=AND&_=1744904461889} hits=10 status=0 QTime=11
+2025-04-17 15:50:02.312 INFO  (qtp1186339926-32) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744904461869&wt=json)
+2025-04-17 15:50:02.315 INFO  (qtp1186339926-32) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744904461869} status=0 QTime=2
+2025-04-17 15:50:02.313 INFO  (qtp1186339926-31) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744904461869&indexInfo=false&wt=json)
+2025-04-17 15:50:02.316 INFO  (qtp1186339926-31) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744904461869} status=0 QTime=2
+2025-04-17 15:50:02.316 INFO  (qtp1186339926-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744904461889&indent=true&q=should+i+buy+a+tesla&q.op=AND)
+2025-04-17 15:50:02.317 INFO  (qtp1186339926-59) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=should+i+buy+a+tesla&indent=true&q.op=AND&_=1744904461889} hits=10 status=0 QTime=0
+2025-04-17 15:50:05.644 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744904461889&indent=true&q=should+i+buy+a+tesla&q.op=AND)
+2025-04-17 15:50:05.647 INFO  (qtp1186339926-40) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=should+i+buy+a+tesla&indent=true&q.op=AND&_=1744904461889} hits=10 status=0 QTime=3
+2025-04-17 15:50:09.201 INFO  (qtp1186339926-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744904461889&indent=true&q=should+i+buy+a+tesla%3F&q.op=AND)
+2025-04-17 15:50:09.203 INFO  (qtp1186339926-59) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=should+i+buy+a+tesla?&indent=true&q.op=AND&_=1744904461889} hits=0 status=0 QTime=3
+2025-04-17 15:50:09.261 INFO  (qtp1186339926-34) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744904461869&wt=json)
+2025-04-17 15:50:09.262 INFO  (qtp1186339926-32) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744904461889&indent=true&q=should+i+buy+a+tesla%3F&q.op=AND)
+2025-04-17 15:50:09.265 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744904461869&indexInfo=false&wt=json)
+2025-04-17 15:50:09.266 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744904461869} status=0 QTime=5
+2025-04-17 15:50:09.266 INFO  (qtp1186339926-32) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=should+i+buy+a+tesla?&indent=true&q.op=AND&_=1744904461889} hits=0 status=0 QTime=4
+2025-04-17 15:50:09.268 INFO  (qtp1186339926-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744904461869} status=0 QTime=7
+2025-04-17 15:50:12.543 INFO  (qtp1186339926-31) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744904461889&indent=true&q=should+i+buy+a+tesla&q.op=AND)
+2025-04-17 15:50:12.546 INFO  (qtp1186339926-31) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=should+i+buy+a+tesla&indent=true&q.op=AND&_=1744904461889} hits=10 status=0 QTime=3
+2025-04-17 15:50:12.607 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744904461869&wt=json)
+2025-04-17 15:50:12.607 INFO  (qtp1186339926-34) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744904461869&indexInfo=false&wt=json)
+2025-04-17 15:50:12.608 INFO  (qtp1186339926-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744904461869} status=0 QTime=0
+2025-04-17 15:50:12.610 INFO  (qtp1186339926-59) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744904461889&indent=true&q=should+i+buy+a+tesla&q.op=AND)
+2025-04-17 15:50:12.615 INFO  (qtp1186339926-59) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=should+i+buy+a+tesla&indent=true&q.op=AND&_=1744904461889} hits=10 status=0 QTime=4
+2025-04-17 15:50:12.615 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744904461869} status=0 QTime=7
+2025-04-17 15:50:38.282 INFO  (qtp1186339926-34) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?q=%2A%3A%2A&q.op=AND&fl=comment_score%2C+comment_date%2C+comment_content%2C+sentiment_score&df=comment_content&wt=json&rows=100000&defType=edismax)
+2025-04-17 15:50:38.285 INFO  (qtp1186339926-34) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=*:*&df=comment_content&defType=edismax&fl=comment_score,+comment_date,+comment_content,+sentiment_score&q.op=AND&rows=100000&wt=json} hits=10616 status=0 QTime=3
+2025-04-17 15:50:41.810 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?q=should+i+buy+a+tesla&q.op=AND&fl=comment_score%2C+comment_date%2C+comment_content%2C+sentiment_score&df=comment_content&wt=json&rows=100000&defType=edismax)
+2025-04-17 15:50:41.813 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=should+i+buy+a+tesla&df=comment_content&defType=edismax&fl=comment_score,+comment_date,+comment_content,+sentiment_score&q.op=AND&rows=100000&wt=json} hits=10 status=0 QTime=3
+2025-04-17 15:56:16.145 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@29df4d43{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2025-04-17 15:56:16.145 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2025-04-17 15:56:16.149 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=256642638
+2025-04-17 15:56:16.152 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.c.SolrCore [reddit]  CLOSING SolrCore org.apache.solr.core.SolrCore@44d8f133
+2025-04-17 15:56:16.152 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.reddit tag=SolrCore@44d8f133
+2025-04-17 15:56:16.152 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@4243ce63: rootName = null, domain = solr.core.reddit, service url = null, agent id = null] for registry solr.core.reddit/com.codahale.metrics.MetricRegistry@248d8c12
+2025-04-17 15:56:16.162 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2025-04-17 15:56:16.171 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2025-04-17 15:56:16.171 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@134ff8f8: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node/com.codahale.metrics.MetricRegistry@7cdbaf2c
+2025-04-17 15:56:16.172 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2025-04-17 15:56:16.172 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2e766822: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm/com.codahale.metrics.MetricRegistry@39636463
+2025-04-17 15:56:16.173 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2025-04-17 15:56:16.173 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@3003e580: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@1c0b0a94
+2025-04-17 15:56:16.179 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@1568159{/solr,null,STOPPED}{/Users/malcs/Desktop/Y3S2/SC4021/SC4021/solr-8.11.4/server/solr-webapp/webapp}
