@@ -42,5 +42,5 @@ bin/post -c <core_name> <path_to_csv_file>
 ```
 
 ```
-- runs of Flask and Solr
+- runs off Flask and Solr
 ```
