@@ -31,4 +31,16 @@ bin/post -c <core_name> <path_to_csv_file>
     - added in stopwords
 
 - synonyms.txt
-    - added in synonyms for query 
+    - added in synonyms for query
+ 
+## UI
+```
+- includes
+    - search bar
+    - date filter
+    - display table
+```
+
+```
+- runs of Flask and Solr
+```
