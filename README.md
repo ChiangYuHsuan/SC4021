@@ -1,14 +1,13 @@
 # SC4021
 
-## Running Solr
+## Solr
+### Running Solr
 ```
 solr-8.11.4/bin/solr start 
 solr-8.11.4/bin/solr stop	
 ```
 To access Solr UI, head to http://localhost:8983/solr/
 
-
-## Solr
 ### Installation
 ```
 wget https://downloads.apache.org/lucene/solr/8.11.4/solr-8.11.4.tgz

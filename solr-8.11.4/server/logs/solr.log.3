@@ -1,127 +1,147 @@
-2025-04-17 13:42:06.728 INFO  (main) [   ] o.e.j.u.log Logging initialized @442ms to org.eclipse.jetty.util.log.Slf4jLog
-2025-04-17 13:42:06.866 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.53.v20231009; built: 2023-10-09T12:29:09.265Z; git: 27bde00a0b95a1d5bbee0eae7984f891d2d0f8c9; jvm 21+35-2513
-2025-04-17 13:42:06.871 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/contexts/] at interval 0
-2025-04-17 13:42:06.998 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2025-04-17 13:42:07.002 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2025-04-17 13:42:07.002 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2025-04-17 13:42:07.003 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
-2025-04-17 13:42:07.033 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2025-04-17 13:42:07.035 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.11.4
-2025-04-17 13:42:07.035 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2025-04-17 13:42:07.035 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/malcs/Downloads/SC4021-main/solr-8.11.4
-2025-04-17 13:42:07.035 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2025-04-17T13:42:07.035795Z
-2025-04-17 13:42:07.042 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/solr
-2025-04-17 13:42:07.042 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/solr/solr.xml
-2025-04-17 13:42:07.077 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@5f049ea1, but no JMX reporters were configured - adding default JMX reporter.
-2025-04-17 13:42:07.375 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
-2025-04-17 13:42:07.443 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@684b31de[provider=null,keyStore=null,trustStore=null]
-2025-04-17 13:42:07.443 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@684b31de[provider=null,keyStore=null,trustStore=null]
-2025-04-17 13:42:07.502 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@22eaa86e[provider=null,keyStore=null,trustStore=null]
-2025-04-17 13:42:07.502 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@22eaa86e[provider=null,keyStore=null,trustStore=null]
-2025-04-17 13:42:07.519 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
-2025-04-17 13:42:07.573 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
-2025-04-17 13:42:07.578 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2025-04-17 13:42:07.604 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5f049ea1
-2025-04-17 13:42:07.604 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5f049ea1
-2025-04-17 13:42:07.605 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5f049ea1
-2025-04-17 13:42:07.622 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/solr
-2025-04-17 13:42:07.622 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [reddit]
-2025-04-17 13:42:07.637 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.4
-2025-04-17 13:42:07.648 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@1568159{/solr,file:///Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/solr-webapp/webapp/,AVAILABLE}{/Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/solr-webapp/webapp}
-2025-04-17 13:42:07.651 WARN  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
-2025-04-17 13:42:07.653 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@29df4d43{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
-2025-04-17 13:42:07.653 INFO  (main) [   ] o.e.j.s.Server Started @1368ms
-2025-04-17 13:42:07.671 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.IndexSchema Schema name=default-config
-2025-04-17 13:42:07.787 WARN  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
-2025-04-17 13:42:07.787 WARN  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
-2025-04-17 13:42:07.787 WARN  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
-2025-04-17 13:42:07.787 WARN  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
-2025-04-17 13:42:07.787 WARN  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
-2025-04-17 13:42:07.857 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2025-04-17 13:42:07.872 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.c.CoreContainer Creating SolrCore 'reddit' using configuration from instancedir /Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/solr/reddit, trusted=true
-2025-04-17 13:42:07.883 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.reddit' (registry 'solr.core.reddit') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5f049ea1
-2025-04-17 13:42:07.889 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.c.SolrCore [[reddit] ] Opening new SolrCore at [/Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/solr/reddit], dataDir=[/Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/solr/reddit/data/]
-2025-04-17 13:42:08.110 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2025-04-17 13:42:08.110 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2025-04-17 13:42:08.119 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2025-04-17 13:42:08.119 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2025-04-17 13:42:08.194 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/solr/reddit/conf
-2025-04-17 13:42:08.200 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2025-04-17 13:42:08.202 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=comment_content,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=2}
-2025-04-17 13:42:08.205 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2025-04-17 13:42:08.213 INFO  (searcherExecutor-15-thread-1-processing-x:reddit) [   x:reddit] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2025-04-17 13:42:08.213 INFO  (searcherExecutor-15-thread-1-processing-x:reddit) [   x:reddit] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2025-04-17 13:42:08.216 INFO  (searcherExecutor-15-thread-1-processing-x:reddit) [   x:reddit] o.a.s.c.SolrCore [reddit]  Registered new searcher autowarm time: 0 ms
-2025-04-17 13:42:10.654 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/?null)
-2025-04-17 13:42:10.804 INFO  (qtp1186339926-32) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744897330760&indexInfo=false&wt=json)
-2025-04-17 13:42:10.806 INFO  (qtp1186339926-34) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897330779&df=comment_content&indent=true&q=water&q.op=AND&spellcheck=true&spellcheck.build=true&spellcheck.reload=false)
-2025-04-17 13:42:10.809 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744897330760&wt=json)
-2025-04-17 13:42:10.813 INFO  (qtp1186339926-32) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744897330760} status=0 QTime=8
-2025-04-17 13:42:10.825 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744897330760} status=0 QTime=15
-2025-04-17 13:42:10.888 INFO  (qtp1186339926-34) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=water&df=comment_content&indent=true&spellcheck=true&q.op=AND&spellcheck.reload=false&spellcheck.build=true&_=1744897330779} hits=100 status=0 QTime=81
-2025-04-17 13:42:18.005 INFO  (qtp1186339926-39) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897330779&df=comment_content&indent=true&q=wter&q.op=AND)
-2025-04-17 13:42:18.007 INFO  (qtp1186339926-39) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897330779} hits=0 status=0 QTime=1
-2025-04-17 13:42:18.066 INFO  (qtp1186339926-33) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744897330760&wt=json)
-2025-04-17 13:42:18.066 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744897330760&indexInfo=false&wt=json)
-2025-04-17 13:42:18.066 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744897330760} status=0 QTime=0
-2025-04-17 13:42:18.071 INFO  (qtp1186339926-33) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744897330760} status=0 QTime=5
-2025-04-17 13:42:18.071 INFO  (qtp1186339926-34) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897330779&df=comment_content&indent=true&q=wter&q.op=AND)
-2025-04-17 13:42:18.073 INFO  (qtp1186339926-34) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897330779} hits=0 status=0 QTime=2
-2025-04-17 13:42:18.919 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897330779&df=comment_content&indent=true&q=wter&q.op=AND)
-2025-04-17 13:42:18.921 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897330779} hits=0 status=0 QTime=2
-2025-04-17 13:42:19.369 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897330779&df=comment_content&indent=true&q=wter&q.op=AND)
-2025-04-17 13:42:19.372 INFO  (qtp1186339926-36) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897330779} hits=0 status=0 QTime=3
-2025-04-17 13:42:19.510 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897330779&df=comment_content&indent=true&q=wter&q.op=AND)
-2025-04-17 13:42:19.512 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897330779} hits=0 status=0 QTime=1
-2025-04-17 13:42:19.661 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897330779&df=comment_content&indent=true&q=wter&q.op=AND)
-2025-04-17 13:42:19.663 INFO  (qtp1186339926-36) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897330779} hits=0 status=0 QTime=2
-2025-04-17 13:42:19.852 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897330779&df=comment_content&indent=true&q=wter&q.op=AND)
-2025-04-17 13:42:19.854 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897330779} hits=0 status=0 QTime=1
-2025-04-17 13:42:20.014 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897330779&df=comment_content&indent=true&q=wter&q.op=AND)
-2025-04-17 13:42:20.018 INFO  (qtp1186339926-36) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897330779} hits=0 status=0 QTime=4
-2025-04-17 13:42:20.201 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897330779&df=comment_content&indent=true&q=wter&q.op=AND)
-2025-04-17 13:42:20.204 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897330779} hits=0 status=0 QTime=3
-2025-04-17 13:42:20.360 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897330779&df=comment_content&indent=true&q=wter&q.op=AND)
-2025-04-17 13:42:20.362 INFO  (qtp1186339926-36) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897330779} hits=0 status=0 QTime=2
-2025-04-17 13:42:20.510 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897330779&df=comment_content&indent=true&q=wter&q.op=AND)
-2025-04-17 13:42:20.513 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897330779} hits=0 status=0 QTime=3
-2025-04-17 13:42:20.928 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897330779&df=comment_content&indent=true&q=wter&q.op=AND)
-2025-04-17 13:42:20.930 INFO  (qtp1186339926-36) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897330779} hits=0 status=0 QTime=2
-2025-04-17 13:42:21.125 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897330779&df=comment_content&indent=true&q=wter&q.op=AND)
-2025-04-17 13:42:21.128 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897330779} hits=0 status=0 QTime=3
-2025-04-17 13:42:21.299 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897330779&df=comment_content&indent=true&q=wter&q.op=AND)
-2025-04-17 13:42:21.301 INFO  (qtp1186339926-36) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897330779} hits=0 status=0 QTime=2
-2025-04-17 13:42:21.460 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897330779&df=comment_content&indent=true&q=wter&q.op=AND)
-2025-04-17 13:42:21.463 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897330779} hits=0 status=0 QTime=3
-2025-04-17 13:42:21.620 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897330779&df=comment_content&indent=true&q=wter&q.op=AND)
-2025-04-17 13:42:21.622 INFO  (qtp1186339926-36) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897330779} hits=0 status=0 QTime=2
-2025-04-17 13:42:21.777 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897330779&df=comment_content&indent=true&q=wter&q.op=AND)
-2025-04-17 13:42:21.779 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897330779} hits=0 status=0 QTime=2
-2025-04-17 13:42:21.941 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897330779&df=comment_content&indent=true&q=wter&q.op=AND)
-2025-04-17 13:42:21.944 INFO  (qtp1186339926-36) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897330779} hits=0 status=0 QTime=3
-2025-04-17 13:42:22.136 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897330779&df=comment_content&indent=true&q=wter&q.op=AND)
-2025-04-17 13:42:22.140 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897330779} hits=0 status=0 QTime=3
-2025-04-17 13:42:22.297 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897330779&df=comment_content&indent=true&q=wter&q.op=AND)
-2025-04-17 13:42:22.300 INFO  (qtp1186339926-36) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897330779} hits=0 status=0 QTime=2
-2025-04-17 13:42:29.142 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897330779&defType=edismax&df=comment_content&indent=true&q=wter&q.op=AND)
-2025-04-17 13:42:29.151 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&defType=edismax&df=comment_content&indent=true&q.op=AND&_=1744897330779} hits=0 status=0 QTime=8
-2025-04-17 13:42:29.213 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744897330760&indexInfo=false&wt=json)
-2025-04-17 13:42:29.213 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744897330760&wt=json)
-2025-04-17 13:42:29.214 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744897330760} status=0 QTime=0
-2025-04-17 13:42:29.219 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897330779&defType=edismax&df=comment_content&indent=true&q=wter&q.op=AND)
-2025-04-17 13:42:29.220 INFO  (qtp1186339926-40) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&defType=edismax&df=comment_content&indent=true&q.op=AND&_=1744897330779} hits=0 status=0 QTime=1
-2025-04-17 13:42:29.220 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744897330760} status=0 QTime=6
-2025-04-17 13:42:58.899 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@29df4d43{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
-2025-04-17 13:42:58.899 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
-2025-04-17 13:42:58.900 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=256642638
-2025-04-17 13:42:58.902 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.c.SolrCore [reddit]  CLOSING SolrCore org.apache.solr.core.SolrCore@5632a77a
-2025-04-17 13:42:58.902 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.reddit tag=SolrCore@5632a77a
-2025-04-17 13:42:58.902 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@7b81e3c9: rootName = null, domain = solr.core.reddit, service url = null, agent id = null] for registry solr.core.reddit/com.codahale.metrics.MetricRegistry@1692ed3c
-2025-04-17 13:42:58.911 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
-2025-04-17 13:42:58.917 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
-2025-04-17 13:42:58.918 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@134ff8f8: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node/com.codahale.metrics.MetricRegistry@6e72fb60
-2025-04-17 13:42:58.919 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
-2025-04-17 13:42:58.919 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2e766822: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm/com.codahale.metrics.MetricRegistry@2fcf5400
-2025-04-17 13:42:58.920 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
-2025-04-17 13:42:58.920 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@3003e580: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@19c47be4
-2025-04-17 13:42:58.924 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@1568159{/solr,null,STOPPED}{/Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/solr-webapp/webapp}
+2025-04-17 13:43:03.960 INFO  (main) [   ] o.e.j.u.log Logging initialized @477ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-04-17 13:43:04.095 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.53.v20231009; built: 2023-10-09T12:29:09.265Z; git: 27bde00a0b95a1d5bbee0eae7984f891d2d0f8c9; jvm 21+35-2513
+2025-04-17 13:43:04.100 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/contexts/] at interval 0
+2025-04-17 13:43:04.222 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2025-04-17 13:43:04.226 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2025-04-17 13:43:04.226 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2025-04-17 13:43:04.227 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2025-04-17 13:43:04.258 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2025-04-17 13:43:04.260 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.11.4
+2025-04-17 13:43:04.261 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2025-04-17 13:43:04.261 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/malcs/Downloads/SC4021-main/solr-8.11.4
+2025-04-17 13:43:04.261 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2025-04-17T13:43:04.261225Z
+2025-04-17 13:43:04.267 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/solr
+2025-04-17 13:43:04.267 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/solr/solr.xml
+2025-04-17 13:43:04.301 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@5f049ea1, but no JMX reporters were configured - adding default JMX reporter.
+2025-04-17 13:43:04.548 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2025-04-17 13:43:04.613 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@684b31de[provider=null,keyStore=null,trustStore=null]
+2025-04-17 13:43:04.613 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@684b31de[provider=null,keyStore=null,trustStore=null]
+2025-04-17 13:43:04.672 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@22eaa86e[provider=null,keyStore=null,trustStore=null]
+2025-04-17 13:43:04.672 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@22eaa86e[provider=null,keyStore=null,trustStore=null]
+2025-04-17 13:43:04.687 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2025-04-17 13:43:04.741 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2025-04-17 13:43:04.745 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2025-04-17 13:43:04.769 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5f049ea1
+2025-04-17 13:43:04.770 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5f049ea1
+2025-04-17 13:43:04.770 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5f049ea1
+2025-04-17 13:43:04.786 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/solr
+2025-04-17 13:43:04.786 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [reddit]
+2025-04-17 13:43:04.799 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.4
+2025-04-17 13:43:04.809 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@1568159{/solr,file:///Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/solr-webapp/webapp/,AVAILABLE}{/Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/solr-webapp/webapp}
+2025-04-17 13:43:04.810 WARN  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2025-04-17 13:43:04.814 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@29df4d43{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2025-04-17 13:43:04.814 INFO  (main) [   ] o.e.j.s.Server Started @1331ms
+2025-04-17 13:43:04.828 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.IndexSchema Schema name=default-config
+2025-04-17 13:43:04.936 WARN  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2025-04-17 13:43:04.936 WARN  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2025-04-17 13:43:04.936 WARN  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2025-04-17 13:43:04.936 WARN  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2025-04-17 13:43:04.936 WARN  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2025-04-17 13:43:05.001 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2025-04-17 13:43:05.016 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.c.CoreContainer Creating SolrCore 'reddit' using configuration from instancedir /Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/solr/reddit, trusted=true
+2025-04-17 13:43:05.027 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.reddit' (registry 'solr.core.reddit') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@5f049ea1
+2025-04-17 13:43:05.032 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.c.SolrCore [[reddit] ] Opening new SolrCore at [/Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/solr/reddit], dataDir=[/Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/solr/reddit/data/]
+2025-04-17 13:43:05.245 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2025-04-17 13:43:05.245 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2025-04-17 13:43:05.253 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2025-04-17 13:43:05.253 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2025-04-17 13:43:05.325 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/solr/reddit/conf
+2025-04-17 13:43:05.331 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2025-04-17 13:43:05.334 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=comment_content,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=2}
+2025-04-17 13:43:05.338 INFO  (coreLoadExecutor-13-thread-1) [   x:reddit] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2025-04-17 13:43:05.347 INFO  (searcherExecutor-15-thread-1-processing-x:reddit) [   x:reddit] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2025-04-17 13:43:05.347 INFO  (searcherExecutor-15-thread-1-processing-x:reddit) [   x:reddit] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2025-04-17 13:43:05.349 INFO  (searcherExecutor-15-thread-1-processing-x:reddit) [   x:reddit] o.a.s.c.SolrCore [reddit]  Registered new searcher autowarm time: 0 ms
+2025-04-17 13:43:10.668 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/?null)
+2025-04-17 13:43:10.844 INFO  (qtp1186339926-32) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744897390809&indexInfo=false&wt=json)
+2025-04-17 13:43:10.845 INFO  (qtp1186339926-33) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744897390809&wt=json)
+2025-04-17 13:43:10.845 INFO  (qtp1186339926-34) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897390828&defType=edismax&df=comment_content&indent=true&q=wter&q.op=AND)
+2025-04-17 13:43:10.853 INFO  (qtp1186339926-32) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744897390809} status=0 QTime=9
+2025-04-17 13:43:10.858 INFO  (qtp1186339926-33) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744897390809} status=0 QTime=13
+2025-04-17 13:43:10.956 INFO  (qtp1186339926-34) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&defType=edismax&df=comment_content&indent=true&q.op=AND&_=1744897390828} hits=0 status=0 QTime=111
+2025-04-17 13:43:15.607 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897390828&df=comment_content&indent=true&q=wter&q.op=AND)
+2025-04-17 13:43:15.620 INFO  (qtp1186339926-38) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897390828} hits=0 status=0 QTime=13
+2025-04-17 13:43:15.688 INFO  (qtp1186339926-39) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744897390809&wt=json)
+2025-04-17 13:43:15.688 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744897390809&indexInfo=false&wt=json)
+2025-04-17 13:43:15.688 INFO  (qtp1186339926-34) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897390828&df=comment_content&indent=true&q=wter&q.op=AND)
+2025-04-17 13:43:15.691 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744897390809} status=0 QTime=2
+2025-04-17 13:43:15.694 INFO  (qtp1186339926-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744897390809} status=0 QTime=6
+2025-04-17 13:43:15.698 INFO  (qtp1186339926-34) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897390828} hits=0 status=0 QTime=10
+2025-04-17 13:43:16.489 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897390828&df=comment_content&indent=true&q=wter&q.op=AND)
+2025-04-17 13:43:16.497 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897390828} hits=0 status=0 QTime=8
+2025-04-17 13:43:16.911 INFO  (qtp1186339926-39) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897390828&df=comment_content&indent=true&q=wter&q.op=AND)
+2025-04-17 13:43:16.920 INFO  (qtp1186339926-39) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897390828} hits=0 status=0 QTime=9
+2025-04-17 13:43:17.053 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897390828&df=comment_content&indent=true&q=wter&q.op=AND)
+2025-04-17 13:43:17.066 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897390828} hits=0 status=0 QTime=13
+2025-04-17 13:43:17.233 INFO  (qtp1186339926-39) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897390828&df=comment_content&indent=true&q=wter&q.op=AND)
+2025-04-17 13:43:17.241 INFO  (qtp1186339926-39) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897390828} hits=0 status=0 QTime=8
+2025-04-17 13:43:17.404 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897390828&df=comment_content&indent=true&q=wter&q.op=AND)
+2025-04-17 13:43:17.413 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897390828} hits=0 status=0 QTime=8
+2025-04-17 13:43:17.555 INFO  (qtp1186339926-39) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897390828&df=comment_content&indent=true&q=wter&q.op=AND)
+2025-04-17 13:43:17.563 INFO  (qtp1186339926-39) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897390828} hits=0 status=0 QTime=8
+2025-04-17 13:43:17.763 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897390828&df=comment_content&indent=true&q=wter&q.op=AND)
+2025-04-17 13:43:17.770 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897390828} hits=0 status=0 QTime=6
+2025-04-17 13:43:17.921 INFO  (qtp1186339926-39) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897390828&df=comment_content&indent=true&q=wter&q.op=AND)
+2025-04-17 13:43:17.930 INFO  (qtp1186339926-39) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897390828} hits=0 status=0 QTime=9
+2025-04-17 13:43:18.064 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897390828&df=comment_content&indent=true&q=wter&q.op=AND)
+2025-04-17 13:43:18.072 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897390828} hits=0 status=0 QTime=8
+2025-04-17 13:43:18.237 INFO  (qtp1186339926-39) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897390828&df=comment_content&indent=true&q=wter&q.op=AND)
+2025-04-17 13:43:18.244 INFO  (qtp1186339926-39) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897390828} hits=0 status=0 QTime=7
+2025-04-17 13:43:18.396 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897390828&df=comment_content&indent=true&q=wter&q.op=AND)
+2025-04-17 13:43:18.403 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897390828} hits=0 status=0 QTime=7
+2025-04-17 13:43:18.550 INFO  (qtp1186339926-39) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897390828&df=comment_content&indent=true&q=wter&q.op=AND)
+2025-04-17 13:43:18.553 INFO  (qtp1186339926-39) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897390828} hits=0 status=0 QTime=3
+2025-04-17 13:43:18.739 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897390828&df=comment_content&indent=true&q=wter&q.op=AND)
+2025-04-17 13:43:18.747 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897390828} hits=0 status=0 QTime=7
+2025-04-17 13:43:18.906 INFO  (qtp1186339926-39) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897390828&df=comment_content&indent=true&q=wter&q.op=AND)
+2025-04-17 13:43:18.913 INFO  (qtp1186339926-39) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897390828} hits=0 status=0 QTime=7
+2025-04-17 13:43:19.064 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897390828&df=comment_content&indent=true&q=wter&q.op=AND)
+2025-04-17 13:43:19.070 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897390828} hits=0 status=0 QTime=6
+2025-04-17 13:43:19.202 INFO  (qtp1186339926-39) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897390828&df=comment_content&indent=true&q=wter&q.op=AND)
+2025-04-17 13:43:19.207 INFO  (qtp1186339926-39) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897390828} hits=0 status=0 QTime=5
+2025-04-17 13:43:19.362 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897390828&df=comment_content&indent=true&q=wter&q.op=AND)
+2025-04-17 13:43:19.369 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897390828} hits=0 status=0 QTime=7
+2025-04-17 13:43:19.650 INFO  (qtp1186339926-39) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897390828&df=comment_content&indent=true&q=wter&q.op=AND)
+2025-04-17 13:43:19.656 INFO  (qtp1186339926-39) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&indent=true&q.op=AND&_=1744897390828} hits=0 status=0 QTime=6
+2025-04-17 13:43:25.581 INFO  (qtp1186339926-37) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897390828&defType=edismax&df=comment_content&indent=true&q=wter&q.op=AND)
+2025-04-17 13:43:25.584 INFO  (qtp1186339926-37) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&defType=edismax&df=comment_content&indent=true&q.op=AND&_=1744897390828} hits=0 status=0 QTime=3
+2025-04-17 13:43:25.656 INFO  (qtp1186339926-39) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744897390809&indexInfo=false&wt=json)
+2025-04-17 13:43:25.657 INFO  (qtp1186339926-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744897390809} status=0 QTime=0
+2025-04-17 13:43:25.658 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897390828&defType=edismax&df=comment_content&indent=true&q=wter&q.op=AND)
+2025-04-17 13:43:25.656 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744897390809&wt=json)
+2025-04-17 13:43:25.662 INFO  (qtp1186339926-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744897390809} status=0 QTime=6
+2025-04-17 13:43:25.662 INFO  (qtp1186339926-38) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&defType=edismax&df=comment_content&indent=true&q.op=AND&_=1744897390828} hits=0 status=0 QTime=4
+2025-04-17 13:45:41.357 INFO  (qtp1186339926-31) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897390828&defType=edismax&df=comment_content&indent=true&q=water&q.op=AND)
+2025-04-17 13:45:41.360 INFO  (qtp1186339926-31) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=water&defType=edismax&df=comment_content&indent=true&q.op=AND&_=1744897390828} hits=100 status=0 QTime=2
+2025-04-17 13:45:41.448 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1744897390809&indexInfo=false&wt=json)
+2025-04-17 13:45:41.448 INFO  (qtp1186339926-38) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1744897390809} status=0 QTime=3
+2025-04-17 13:45:41.451 INFO  (qtp1186339926-39) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1744897390809&wt=json)
+2025-04-17 13:45:41.451 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?_=1744897390828&defType=edismax&df=comment_content&indent=true&q=water&q.op=AND)
+2025-04-17 13:45:41.451 INFO  (qtp1186339926-40) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=water&defType=edismax&df=comment_content&indent=true&q.op=AND&_=1744897390828} hits=100 status=0 QTime=0
+2025-04-17 13:45:41.454 INFO  (qtp1186339926-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1744897390809} status=0 QTime=3
+2025-04-17 13:55:55.774 INFO  (qtp1186339926-40) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?q=%2A%3A%2A&q.op=AND&fl=comment_score%2C+comment_date%2C+comment_content%2C+sentiment_score&df=comment_content&wt=json&rows=1000&defType=edismax)
+2025-04-17 13:55:55.784 INFO  (qtp1186339926-40) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=*:*&df=comment_content&defType=edismax&fl=comment_score,+comment_date,+comment_content,+sentiment_score&q.op=AND&rows=1000&wt=json} hits=10616 status=0 QTime=9
+2025-04-17 13:55:59.317 INFO  (qtp1186339926-34) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?q=%2A%3A%2A&q.op=AND&fl=comment_score%2C+comment_date%2C+comment_content%2C+sentiment_score&df=comment_content&wt=json&rows=1000&defType=edismax)
+2025-04-17 13:55:59.320 INFO  (qtp1186339926-34) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=*:*&df=comment_content&defType=edismax&fl=comment_score,+comment_date,+comment_content,+sentiment_score&q.op=AND&rows=1000&wt=json} hits=10616 status=0 QTime=3
+2025-04-17 13:56:01.419 INFO  (qtp1186339926-32) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?q=water&q.op=AND&fl=comment_score%2C+comment_date%2C+comment_content%2C+sentiment_score&df=comment_content&wt=json&rows=1000&defType=edismax)
+2025-04-17 13:56:01.422 INFO  (qtp1186339926-32) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=water&df=comment_content&defType=edismax&fl=comment_score,+comment_date,+comment_content,+sentiment_score&q.op=AND&rows=1000&wt=json} hits=100 status=0 QTime=3
+2025-04-17 13:56:06.397 INFO  (qtp1186339926-60) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?q=wter&q.op=AND&fl=comment_score%2C+comment_date%2C+comment_content%2C+sentiment_score&df=comment_content&wt=json&rows=1000&defType=edismax)
+2025-04-17 13:56:06.402 INFO  (qtp1186339926-60) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=wter&df=comment_content&defType=edismax&fl=comment_score,+comment_date,+comment_content,+sentiment_score&q.op=AND&rows=1000&wt=json} hits=0 status=0 QTime=5
+2025-04-17 13:56:10.895 INFO  (qtp1186339926-33) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?q=water&q.op=AND&fl=comment_score%2C+comment_date%2C+comment_content%2C+sentiment_score&df=comment_content&wt=json&rows=1000&defType=edismax)
+2025-04-17 13:56:10.896 INFO  (qtp1186339926-33) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=water&df=comment_content&defType=edismax&fl=comment_score,+comment_date,+comment_content,+sentiment_score&q.op=AND&rows=1000&wt=json} hits=100 status=0 QTime=2
+2025-04-17 13:56:26.411 INFO  (qtp1186339926-34) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/reddit/select?q=water&q.op=AND&fl=comment_score%2C+comment_date%2C+comment_content%2C+sentiment_score&df=comment_content&wt=json&rows=1000&defType=edismax&fq=comment_date%3A%5B2024-01-02T00%3A00%3A00Z+TO+%2A%5D)
+2025-04-17 13:56:26.446 INFO  (qtp1186339926-34) [   x:reddit] o.a.s.c.S.Request [reddit]  webapp=/solr path=/select params={q=water&df=comment_content&defType=edismax&fl=comment_score,+comment_date,+comment_content,+sentiment_score&q.op=AND&fq=comment_date:[2024-01-02T00:00:00Z+TO+*]&rows=1000&wt=json} hits=80 status=0 QTime=34
+2025-04-17 13:59:03.573 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@29df4d43{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2025-04-17 13:59:03.573 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2025-04-17 13:59:03.575 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=256642638
+2025-04-17 13:59:03.577 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.c.SolrCore [reddit]  CLOSING SolrCore org.apache.solr.core.SolrCore@4d7bce6c
+2025-04-17 13:59:03.577 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.reddit tag=SolrCore@4d7bce6c
+2025-04-17 13:59:03.577 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5a6302fb: rootName = null, domain = solr.core.reddit, service url = null, agent id = null] for registry solr.core.reddit/com.codahale.metrics.MetricRegistry@44e71465
+2025-04-17 13:59:03.585 INFO  (coreCloseExecutor-21-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2025-04-17 13:59:03.593 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2025-04-17 13:59:03.594 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@134ff8f8: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node/com.codahale.metrics.MetricRegistry@1676fdf2
+2025-04-17 13:59:03.596 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2025-04-17 13:59:03.596 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2e766822: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm/com.codahale.metrics.MetricRegistry@27b57f8d
+2025-04-17 13:59:03.597 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2025-04-17 13:59:03.597 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@3003e580: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@7ee4e982
+2025-04-17 13:59:03.603 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@1568159{/solr,null,STOPPED}{/Users/malcs/Downloads/SC4021-main/solr-8.11.4/server/solr-webapp/webapp}
